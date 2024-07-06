@@ -41,8 +41,19 @@ class CustomDocument extends Document {
           ></link>
           <link
             rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+            data-tag="font"
+          ></link>
+          <link
+            rel="stylesheet"
             href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css"
           ></link>
+          <noscript
+            dangerouslySetInnerHTML={{
+              __html:
+                '</noscript><!--This is the head section-->\n<!-- <style> ... </style> -->\n<style>\n* {\n    -webkit-font-smoothing: antialiased;\n    -moz-osx-font-smoothing: grayscale;\n}\n</style><noscript>',
+            }}
+          ></noscript>
         </Head>
         <body>
           <Main></Main>
@@ -50,7 +61,7 @@ class CustomDocument extends Document {
           <div
             dangerouslySetInnerHTML={{
               __html:
-                "\n        <script defer src='https://unpkg.com/@teleporthq/teleport-custom-scripts'></script>",
+                '<!-- Your body code here -->\n<!-- <script type="text/javascript"> ... </script> -->\n        <script defer src=\'https://unpkg.com/@teleporthq/teleport-custom-scripts\'></script>',
             }}
           ></div>
         </body>

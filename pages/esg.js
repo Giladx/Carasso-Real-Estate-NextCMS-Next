@@ -1,6 +1,8 @@
 import React from 'react'
 import Head from 'next/head'
 
+import Script from 'dangerous-html/react'
+
 const ESG = (props) => {
   return (
     <>
@@ -17,7 +19,6 @@ const ESG = (props) => {
             src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/e6d869ac-5e69-4dae-a864-fa816f5ebf6c/874ae49c-9b31-4035-9c5f-e6f908ee8972?org_if_sml=1&amp;q=80352919&amp;force_format=original"
             className="esg-image"
           />
-          <div></div>
           <div className="esg-herotext">
             <span className="esg-text">
               <span className="esg-text001">
@@ -40,35 +41,57 @@ const ESG = (props) => {
               <span>החברתית והסביבתית שלנו</span>
             </span>
           </div>
+          <div id="mask" className="esg-mask"></div>
         </div>
         <div className="esg-memories">
           <div className="esg-content-imagecontainer">
-            <div className="esg-image1">
+            <div className="esg-gallery">
               <div
                 data-thq="slider"
                 data-navigation="true"
                 data-pagination="true"
                 className="esg-slider swiper"
               >
-                <div data-thq="slider-wrapper" className="swiper-wrapper">
+                <div
+                  data-thq="slider-wrapper"
+                  className="esg-slider-wrapper swiper-wrapper"
+                >
                   <div
                     data-thq="slider-slide"
                     className="esg-slider-slide swiper-slide"
                   >
                     <img
                       alt="image"
-                      src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/e6d869ac-5e69-4dae-a864-fa816f5ebf6c/df3a2509-130a-467a-9c0b-1d3ef385506b?org_if_sml=1164804&amp;force_format=original"
-                      className="esg-image2"
+                      sizes="(min-width: 992px) 1200px, (min-width: 768px) 800px, 480px"
+                      src="/external/image-rectenagle-1500w-1500w.webp"
+                      srcSet="external//image-rectenagle-1500w-1500w.webp 1200w, external/image-rectenagle-1500w-tablet.webp 800w, external/image-rectenagle-1500w-mobile.webp 480w"
+                      className="esg-image1"
                     />
                   </div>
                   <div
                     data-thq="slider-slide"
                     className="esg-slider-slide1 swiper-slide"
-                  ></div>
+                  >
+                    <img
+                      alt="image"
+                      sizes="(min-width: 992px) 1200px, (min-width: 768px) 800px, 480px"
+                      src="/external/image-rectenagle-1500w-1500w.webp"
+                      srcSet="external//image-rectenagle-1500w-1500w.webp 1200w, external/image-rectenagle-1500w-tablet.webp 800w, external/image-rectenagle-1500w-mobile.webp 480w"
+                      className="esg-image2"
+                    />
+                  </div>
                   <div
                     data-thq="slider-slide"
                     className="esg-slider-slide2 swiper-slide"
-                  ></div>
+                  >
+                    <img
+                      alt="image"
+                      sizes="(min-width: 992px) 1200px, (min-width: 768px) 800px, 480px"
+                      src="/external/image-rectenagle-1500w-1500w.webp"
+                      srcSet="external//image-rectenagle-1500w-1500w.webp 1200w, external/image-rectenagle-1500w-tablet.webp 800w, external/image-rectenagle-1500w-mobile.webp 480w"
+                      className="esg-image3"
+                    />
+                  </div>
                 </div>
                 <div
                   data-thq="slider-pagination"
@@ -80,11 +103,11 @@ const ESG = (props) => {
                   ></div>
                   <div
                     data-thq="slider-pagination-bullet"
-                    className="swiper-pagination-bullet"
+                    className="esg-slider-pagination-bullet1 swiper-pagination-bullet"
                   ></div>
                   <div
                     data-thq="slider-pagination-bullet"
-                    className="swiper-pagination-bullet"
+                    className="esg-slider-pagination-bullet2 swiper-pagination-bullet"
                   ></div>
                 </div>
                 <div
@@ -96,6 +119,17 @@ const ESG = (props) => {
                   className="esg-slider-button-next swiper-button-next"
                 ></div>
               </div>
+              <div>
+                <div className="esg-container2">
+                  <Script
+                    html={`<style>
+    .swiper-button-prev:after, .swiper-button-next:after{
+    font-size: 20px
+    }
+</style>`}
+                  ></Script>
+                </div>
+              </div>
             </div>
             <div className="esg-content">
               <span className="esg-text005">
@@ -105,10 +139,8 @@ const ESG = (props) => {
                 </span>
               </span>
               <span className="esg-text007">
-                <span>
-                  הסוגיות אולי השתנו מאז, אבל המעורבות והמחויבות נשארו בדיוק
-                  אותו הדבר.
-                </span>
+                הסוגיות אולי השתנו מאז, אבל המעורבות והמחויבות נשארו בדיוק אותו
+                הדבר.
               </span>
             </div>
           </div>
@@ -117,7 +149,7 @@ const ESG = (props) => {
           <div className="esg-headlinescontainer">
             <div className="esg-headlinecontent">
               <div className="esg-headline01">
-                <span className="esg-text009">
+                <span className="esg-text008">
                   <span>
                     הפעילויות שלנו היום מאפשרות לנו להביא לשינוי חיובי בשכונות,
                     בקהילות ובסביבה שבה אנו פועלים
@@ -125,7 +157,7 @@ const ESG = (props) => {
                 </span>
               </div>
               <div className="esg-headline02">
-                <span className="esg-text011">
+                <span className="esg-text010">
                   <span>הנה שלוש דוגמאות מתוך עשרות</span>
                 </span>
               </div>
@@ -139,12 +171,12 @@ const ESG = (props) => {
                 className="esg-icon01"
               />
               <div className="esg-headline">
-                <span className="esg-text013">
+                <span className="esg-text012">
                   <span>שוויון מגדרי</span>
                 </span>
               </div>
-              <div className="esg-text015">
-                <span className="esg-text016">
+              <div className="esg-text014">
+                <span className="esg-text015">
                   <span>
                     לפי נתוני הרשות לניירות ערך, רק בכ-6% מהחברות בישראל מכהנות
                     בדירקטוריון יותר משתי נשים. בדירקטוריון של חברת קרסו מכהנות
@@ -161,13 +193,13 @@ const ESG = (props) => {
                 className="esg-icon02"
               />
               <div className="esg-headline1">
-                <span className="esg-text018">
+                <span className="esg-text017">
                   <span>תכנית קרסו למחקר ופיתוח דיור חברתי</span>
                 </span>
               </div>
-              <div className="esg-text020">
-                <span className="esg-text021">
-                  <span className="esg-text022">
+              <div className="esg-text019">
+                <span className="esg-text020">
+                  <span className="esg-text021">
                     <span>
                       תכנית
                       <span
@@ -217,12 +249,12 @@ const ESG = (props) => {
                 className="esg-icon03"
               />
               <div className="esg-frame1261158211">
-                <span className="esg-text029">
+                <span className="esg-text028">
                   <span>בנייה סביבתית</span>
                 </span>
               </div>
               <div className="esg-frame1261158210">
-                <span className="esg-text031">
+                <span className="esg-text030">
                   <span>
                     בפרויקטים חדשניים כמו Carasso SUNN ופלורה, התכנון נועד למזער
                     את ניצול המשאבים הטבעיים במערכות המים, האוויר והאור, ואף
@@ -236,7 +268,7 @@ const ESG = (props) => {
           </div>
           <div className="esg-frame1261158164">
             <div className="esg-content1">
-              <span className="esg-text033">
+              <span className="esg-text032">
                 <span>
                   מלבד אלה, קרסו תורמת קרוב למיליון שקל מדי שנה למגוון מטרות
                   בעולמות החינוך, קידום נשים, רפואה ועוד. בשבילנו זה תמיד היה
@@ -251,33 +283,38 @@ const ESG = (props) => {
                   src="/external/arrow7stroke3728-8ojps.svg"
                   className="esg-arrow7-stroke"
                 />
-                <span className="esg-text035">
+                <span className="esg-text034">
                   <span>2022</span>
                 </span>
-                <span className="esg-text037">
+                <span className="esg-text036">
                   <span>דו״ח ESG</span>
                 </span>
               </button>
             </button>
           </div>
         </div>
-        <div className="esg-container1 esg-container1">
+        <div className="esg-policy">
           <div className="esg-top">
             <div className="esg-frame1261158205">
-              <span className="esg-text039">
+              <span className="esg-text038">
                 <span>
                   ״קרסו נדלן מכירה באחריותה לקיים תשתית עסקית ערכית ואחראית
                   בפעילותה. נמשיך לפעול בשקיפות תוך אמונה שעלינו להוביל באמצעות
                   דוגמה אישית כלפי כלל מחזיקי העניין של החברה״.
                 </span>
               </span>
-              <button className="esg-buttontextarrow1">
+              <button
+                id="esgBtnId"
+                type="button"
+                className="esg-buttontextarrow1 accordion"
+              >
                 <img
+                  id="esgarrow"
                   alt="CaretDown3728"
                   src="/external/caretdown3728-5t4y.svg"
                   className="esg-caret-down"
                 />
-                <span className="esg-text041">
+                <span className="esg-text040">
                   <span>לקריאת מדיניות ה-ESG שלנו</span>
                 </span>
               </button>
@@ -287,10 +324,10 @@ const ESG = (props) => {
                 <div className="esg-topimage"></div>
                 <div className="esg-bottomtext">
                   <div className="esg-frame279">
-                    <span className="esg-text043">
+                    <span className="esg-text042">
                       <span>דן פרנס</span>
                     </span>
-                    <span className="esg-text045">
+                    <span className="esg-text044">
                       <span>מנכ״ל</span>
                     </span>
                   </div>
@@ -303,16 +340,16 @@ const ESG = (props) => {
               />
             </div>
           </div>
-          <div className="esg-bottom">
+          <div id="esgId" className="esg-bottom panel">
             <div className="esg-frame1261158208">
-              <span className="esg-text047">
+              <span className="esg-text046">
                 <span>פעילות החברה מתמקדת ב-4 ערוצים עיקריים</span>
               </span>
               <div className="esg-frame1261158207">
                 <div className="esg-frame1261158217">
                   <div className="esg-frame1261158216">
                     <div className="esg-frame1261158199">
-                      <span className="esg-text049">
+                      <span className="esg-text048">
                         <span>
                           יחסי החברה עם עובדיה, שימור ופיתוח הון אנושי מגוון
                           ואיכותי
@@ -321,30 +358,30 @@ const ESG = (props) => {
                       <div className="esg-frame1261158196">
                         <img
                           alt="Ellipse13728"
-                          src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/e6d869ac-5e69-4dae-a864-fa816f5ebf6c/221ef27f-dc8f-4fd8-9dc5-df8d7d491941?org_if_sml=1280&amp;force_format=original"
+                          src="/external/ellipse13728-3x8-200w-200w.webp"
                           className="esg-ellipse1"
                         />
-                        <span className="esg-text051">2</span>
+                        <span className="esg-text050">2</span>
                       </div>
                     </div>
                     <div className="esg-frame1261158200">
-                      <span className="esg-text052">
+                      <span className="esg-text051">
                         <span>התנהלות עסקית אתית, אחראית, ונאותה</span>
                       </span>
                       <div className="esg-frame1261158195">
                         <img
                           alt="Ellipse13728"
-                          src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/e6d869ac-5e69-4dae-a864-fa816f5ebf6c/d27ffdec-bdcd-4a3f-abbf-15fb9714ba09?org_if_sml=1280&amp;force_format=original"
+                          src="/external/ellipse13728-sx3w-200w-200w.webp"
                           className="esg-ellipse11"
                         />
-                        <span className="esg-text054">1</span>
+                        <span className="esg-text053">1</span>
                       </div>
                     </div>
                   </div>
                 </div>
                 <div className="esg-frame1261158218">
                   <div className="esg-frame1261158202">
-                    <span className="esg-text055">
+                    <span className="esg-text054">
                       <span>
                         מיסוד תשתית ארגונית לניהול סביבתי יעיל וחסכוני המיטיב עם
                         הסביבה
@@ -353,14 +390,14 @@ const ESG = (props) => {
                     <div className="esg-frame1261158198">
                       <img
                         alt="Ellipse13728"
-                        src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/e6d869ac-5e69-4dae-a864-fa816f5ebf6c/c77af339-b462-49fd-8e6a-23df774d25b1?org_if_sml=1291&amp;force_format=original"
+                        src="/external/ellipse13728-5bj9-200w-200w.webp"
                         className="esg-ellipse12"
                       />
-                      <span className="esg-text057">4</span>
+                      <span className="esg-text056">4</span>
                     </div>
                   </div>
                   <div className="esg-frame1261158201">
-                    <span className="esg-text058">
+                    <span className="esg-text057">
                       <span>
                         השפעה (אימפקט) באמצעות אימוץ, יישום וקידום יעדי הפיתוח
                         של האו&quot;ם בפעילות החברה
@@ -369,20 +406,20 @@ const ESG = (props) => {
                     <div className="esg-frame1261158197">
                       <img
                         alt="Ellipse13728"
-                        src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/e6d869ac-5e69-4dae-a864-fa816f5ebf6c/147e056e-93e7-48d4-83b9-6bffcdb83727?org_if_sml=1291&amp;force_format=original"
+                        src="/external/ellipse13728-jlte-200w-200w.webp"
                         className="esg-ellipse13"
                       />
-                      <span className="esg-text060">3</span>
+                      <span className="esg-text059">3</span>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
             <div className="esg-frame1261158206">
-              <span className="esg-text061">
+              <span className="esg-text060">
                 <span>מדיניות ה-ESG שלנו</span>
               </span>
-              <span className="esg-text063">
+              <span className="esg-text062">
                 <span>
                   אנו מאמינים בהובלה ומצוינות בפעילותנו בכל תחומי הפעילות בחברה,
                   ערכים אשר קיבלו ביטוי בשנת 2023 כאשר החברה פרסמה לראשונה
@@ -394,35 +431,50 @@ const ESG = (props) => {
               </span>
             </div>
           </div>
+          <div>
+            <div className="esg-container4">
+              <Script
+                html={`<script>
+// Get the modal
+var modal = document.getElementById("esgId");
+
+// Get the button that toggles the modal
+var btn = document.getElementById("esgBtnId");
+
+// Get the arrow element
+var arrow = document.getElementById("esgarrow");
+
+// Toggle the modal display and arrow rotation on button click
+btn.onclick = function() {
+  // Toggle modal display
+  modal.style.display = modal.style.display === "flex" ? "none" : "flex";
+  
+  // Toggle arrow rotation
+  arrow.style.transform = arrow.style.transform === "rotate(0deg)" ? "rotate(180deg)" : "rotate(0deg)";
+}
+</script>`}
+              ></Script>
+            </div>
+          </div>
         </div>
         <div className="esg-kodeti">
           <div className="esg-frame1261158212">
             <div className="esg-frame332">
               <div className="esg-frame331">
                 <div className="esg-headline2">
-                  <span className="esg-text065">
-                    <span className="esg-text066">
-                      <span>
-                        הקוד
-                        <span
-                          dangerouslySetInnerHTML={{
-                            __html: ' ',
-                          }}
-                        />
-                      </span>
-                      <span>
-                        <span
-                          dangerouslySetInnerHTML={{
-                            __html: ' ',
-                          }}
-                        />
-                      </span>
-                    </span>
-                    <span>האתי שלנו</span>
+                  <span className="esg-text064">
+                    {' '}
+                    האתי שלנו
+                    <span
+                      dangerouslySetInnerHTML={{
+                        __html: ' ',
+                      }}
+                    />
                   </span>
+                  <span className="esg-text065">הקוד</span>
                 </div>
-                <div className="esg-text070">
-                  <span className="esg-text071">
+                <div className="esg-text066">
+                  <span className="esg-text067">
                     <span>
                       הקוד האתי שלנו משקף את הערכים ותפישת העולם שלנו ומשמש מצפן
                       לפיו אנחנו מתנהלים, גם בתוך הבית וגם מול הלקוחות, הספקים,
@@ -440,7 +492,7 @@ const ESG = (props) => {
                     src="/external/arrow7stroke3728-3and.svg"
                     className="esg-arrow7-stroke1"
                   />
-                  <span className="esg-text073">
+                  <span className="esg-text069">
                     <span>לקריאת הקוד האתי</span>
                   </span>
                 </button>
@@ -453,25 +505,56 @@ const ESG = (props) => {
             className="esg-vector1"
           />
         </div>
-        <div className="esg-container2">
+        <div className="esg-contactusform">
+          <div className="esg-formwindowstage3">
+            <div className="esg-frame1261158156">
+              <div className="esg-formheader">
+                <div className="esg-formclose"></div>
+                <div className="esg-formheaders">
+                  <span className="esg-text071">
+                    טופס
+                    <span
+                      dangerouslySetInnerHTML={{
+                        __html: ' ',
+                      }}
+                    />
+                  </span>
+                  <span className="esg-text072">פניות הציבור</span>
+                </div>
+              </div>
+              <div className="esg-frame166">
+                <div className="esg-frame164">
+                  <div className="esg-container5">
+                    <div className="esg-container6">
+                      <Script
+                        html={`<script type="text/javascript" src="https://form.jotform.com/jsform/241762112773454"></script>`}
+                      ></Script>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="esg-footer">
           <div className="esg-leftcoloumn">
             <div className="esg-links">
               <div className="esg-linksrow2">
-                <span className="esg-text075">
+                <span className="esg-text073">
                   <span>פנו אלינו</span>
                 </span>
                 <div className="esg-links1">
                   <div className="esg-frame133">
-                    <span className="esg-text077">
+                    <span className="esg-text075">
                       <span>יצירת קשר</span>
                     </span>
-                    <span className="esg-text079">
+                    <span className="esg-text077">
                       <span>+972 050 123 1234</span>
                     </span>
-                    <span className="esg-text081">
+                    <span className="esg-text079">
                       <span>ריב״ל 24, תל אביב-יפו</span>
                     </span>
-                    <span className="esg-text083">
+                    <span className="esg-text081">
                       <span>info@carasso-nadlan.com</span>
                     </span>
                   </div>
@@ -495,42 +578,42 @@ const ESG = (props) => {
                 </div>
               </div>
               <div className="esg-linksrow21">
-                <span className="esg-text085">
+                <span className="esg-text083">
                   <span>פרויקטים</span>
                 </span>
                 <div className="esg-links2">
-                  <span className="esg-text087">
+                  <span className="esg-text085">
                     <span>פרויקטים למגורים</span>
                   </span>
-                  <span className="esg-text089">
+                  <span className="esg-text087">
                     <span>סיפורי הצלחה</span>
                   </span>
-                  <span className="esg-text091">
+                  <span className="esg-text089">
                     <span>מרכזי קניות</span>
                   </span>
-                  <span className="esg-text093">
+                  <span className="esg-text091">
                     <span>משרדים והייטק</span>
                   </span>
                 </div>
               </div>
               <div className="esg-linksrow1">
-                <span className="esg-text095">
+                <span className="esg-text093">
                   <span>על החברה</span>
                 </span>
                 <div className="esg-links3">
-                  <span className="esg-text097">
+                  <span className="esg-text095">
                     <span>דף הבית</span>
                   </span>
-                  <span className="esg-text099">
+                  <span className="esg-text097">
                     <span>הסיפור שלנו</span>
                   </span>
-                  <span className="esg-text101">
+                  <span className="esg-text099">
                     <span>התחדשות עירונית</span>
                   </span>
-                  <span className="esg-text103">
+                  <span className="esg-text101">
                     <span>חדשות ועידכונים</span>
                   </span>
-                  <span className="esg-text105">
+                  <span className="esg-text103">
                     <span>ESG</span>
                   </span>
                 </div>
@@ -538,17 +621,17 @@ const ESG = (props) => {
             </div>
             <div className="esg-info">
               <div className="esg-termslinks">
-                <span className="esg-text107">
+                <span className="esg-text105">
                   <span>הצהרת נגישות</span>
                 </span>
-                <span className="esg-text109">
+                <span className="esg-text107">
                   <span>איסוף נתונים</span>
                 </span>
-                <span className="esg-text111">
+                <span className="esg-text109">
                   <span>מדיניות פרטיות</span>
                 </span>
                 <div className="esg-frame56">
-                  <span className="esg-text113">
+                  <span className="esg-text111">
                     <span>2023 קרסו</span>
                   </span>
                   <img
@@ -573,7 +656,7 @@ const ESG = (props) => {
             />
             <div className="esg-moveo-design-credit">
               <div className="esg-moveologo">
-                <span className="esg-text115">
+                <span className="esg-text113">
                   <span>Designed by</span>
                 </span>
                 <img
@@ -601,18 +684,12 @@ const ESG = (props) => {
             flex-direction: column;
           }
           .esg-hero {
-            gap: 70px;
             width: 100%;
             height: 800px;
             display: flex;
             position: relative;
-            align-self: stretch;
             align-items: center;
-            flex-shrink: 0;
-            flex-direction: column;
-            background-size: auto, cover;
             justify-content: center;
-            background-position: top left, center;
           }
           .esg-image {
             left: 0px;
@@ -621,22 +698,6 @@ const ESG = (props) => {
             height: 100%;
             position: absolute;
             object-fit: cover;
-          }
-          .esg-container1 {
-            top: 0px;
-            flex: 0 0 auto;
-            left: 0px;
-            width: 100%;
-            height: 100%;
-            display: flex;
-            position: absolute;
-            align-items: flex-start;
-            flex-direction: column;
-            background-image: radial-gradient(
-              circle at center,
-              rgba(0, 0, 0, 0) 0%,
-              rgba(0, 0, 0, 0.6) 92%
-            );
           }
           .esg-herotext {
             gap: 10px;
@@ -664,27 +725,36 @@ const ESG = (props) => {
           .esg-text001 {
             font-weight: 300;
           }
+          .esg-mask {
+            flex: 0 0 auto;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            position: absolute;
+            align-items: flex-start;
+            flex-direction: column;
+            background-image: radial-gradient(
+              circle at center,
+              rgba(0, 0, 0, 0.4) 0%,
+              rgba(0, 0, 0, 0.7) 100%
+            );
+          }
           .esg-memories {
-            gap: 72px;
             width: 100%;
             height: 713px;
             display: flex;
             padding: 100px 200px;
             z-index: 1;
-            align-self: stretch;
             align-items: center;
-            flex-shrink: 0;
             justify-content: center;
           }
           .esg-content-imagecontainer {
-            gap: 131px;
             display: flex;
-            flex-grow: 1;
             align-self: stretch;
             align-items: center;
             justify-content: center;
           }
-          .esg-image1 {
+          .esg-gallery {
             gap: 16px;
             display: flex;
             flex-grow: 1;
@@ -694,30 +764,51 @@ const ESG = (props) => {
             flex-direction: column;
           }
           .esg-slider {
-            width: 822px;
-            height: auto;
+            width: 800px;
             display: inline-block;
-            border-radius: var(--dl-radius-radius-radius20);
+            position: relative;
+          }
+          .esg-slider-wrapper {
+            margin-bottom: 16px;
           }
           .esg-slider-slide {
-            display: flex;
-            background-size: 100%;
-          }
-          .esg-image2 {
             width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+          .esg-image1 {
+            width: 90%;
             height: auto;
             object-fit: cover;
             border-radius: var(--dl-radius-radius-radius20);
           }
           .esg-slider-slide1 {
+            width: 100%;
+            height: 100%;
             display: flex;
-            background-size: 100%;
-            background-image: url('https://images.unsplash.com/photo-1547036967-23d11aacaee0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTcxOTEzODAyOHw&ixlib=rb-4.0.3&q=80&w=1500');
+            align-items: center;
+            justify-content: center;
+          }
+          .esg-image2 {
+            width: 90%;
+            height: auto;
+            object-fit: cover;
+            border-radius: var(--dl-radius-radius-radius20);
           }
           .esg-slider-slide2 {
+            width: 100%;
+            height: 100%;
             display: flex;
-            background-size: 100%;
-            background-image: url('https://images.unsplash.com/reserve/HgZuGu3gSD6db21T3lxm_San%20Zenone.jpg?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTcxOTEzODAzMHw&ixlib=rb-4.0.3&q=80&w=1500');
+            align-items: center;
+            justify-content: center;
+          }
+          .esg-image3 {
+            width: 90%;
+            height: auto;
+            object-fit: cover;
+            border-radius: var(--dl-radius-radius-radius20);
           }
           .esg-slider-pagination {
             display: block;
@@ -725,17 +816,28 @@ const ESG = (props) => {
           .esg-slider-pagination-bullet {
             background: black;
           }
+          .esg-slider-pagination-bullet1 {
+            background: black;
+          }
+          .esg-slider-pagination-bullet2 {
+            background: black;
+          }
           .esg-slider-button-prev {
-            color: var(--dl-color-carasso-primaryblack);
+            color: var(--dl-color-theme-neutral-dark);
           }
           .esg-slider-button-next {
-            color: var(--dl-color-carasso-primaryblack);
+            color: var(--dl-color-theme-neutral-dark);
+            font-size: 5px;
+          }
+          .esg-container2 {
+            display: contents;
           }
           .esg-content {
             gap: 40px;
             display: flex;
             align-self: stretch;
             align-items: flex-end;
+            margin-left: var(--dl-space-space-sixunits);
             flex-direction: column;
             justify-content: center;
           }
@@ -766,7 +868,6 @@ const ESG = (props) => {
             text-decoration: none;
           }
           .esg-frame3examples {
-            gap: 76px;
             width: 100%;
             height: auto;
             display: flex;
@@ -774,22 +875,20 @@ const ESG = (props) => {
             z-index: 2;
             align-self: stretch;
             align-items: center;
-            flex-shrink: 0;
             flex-direction: column;
             background-color: rgba(255, 255, 255, 1);
           }
           .esg-headlinescontainer {
-            gap: 10px;
-            height: 124px;
+            height: auto;
             display: flex;
             align-self: stretch;
             align-items: center;
             flex-shrink: 0;
+            margin-bottom: var(--dl-space-space-fourunits);
             flex-direction: column;
             justify-content: center;
           }
           .esg-headlinecontent {
-            gap: 40px;
             display: flex;
             align-items: flex-start;
             flex-direction: column;
@@ -801,9 +900,8 @@ const ESG = (props) => {
             align-items: flex-start;
             flex-shrink: 0;
           }
-          .esg-text009 {
+          .esg-text008 {
             color: rgba(0, 0, 0, 1);
-            width: 740px;
             height: auto;
             direction: rtl;
             font-size: 36px;
@@ -813,6 +911,7 @@ const ESG = (props) => {
             font-weight: 300;
             line-height: 129.99999523162842%;
             font-stretch: normal;
+            margin-bottom: var(--dl-space-space-threeunits);
             text-decoration: none;
           }
           .esg-headline02 {
@@ -820,7 +919,7 @@ const ESG = (props) => {
             display: flex;
             align-items: flex-start;
           }
-          .esg-text011 {
+          .esg-text010 {
             color: rgba(0, 0, 0, 1);
             width: 740px;
             height: auto;
@@ -840,26 +939,29 @@ const ESG = (props) => {
             align-self: stretch;
             align-items: flex-start;
             flex-shrink: 0;
+            margin-bottom: var(--dl-space-space-threeunits);
             justify-content: center;
           }
           .esg-frame1261158159 {
-            gap: 50px;
             width: 407px;
             display: flex;
             align-items: center;
             flex-shrink: 0;
+            margin-left: var(--dl-space-space-oneandhalfunits);
+            margin-right: var(--dl-space-space-oneandhalfunits);
             flex-direction: column;
           }
           .esg-icon01 {
             width: 99px;
             height: 99px;
+            margin-bottom: var(--dl-space-space-twounits);
           }
           .esg-headline {
             gap: 10px;
             display: flex;
             align-items: center;
           }
-          .esg-text013 {
+          .esg-text012 {
             color: rgba(0, 0, 0, 1);
             height: auto;
             font-size: 24px;
@@ -869,14 +971,15 @@ const ESG = (props) => {
             font-weight: 400;
             line-height: 129.99999523162842%;
             font-stretch: normal;
+            margin-bottom: var(--dl-space-space-twounits);
             text-decoration: none;
           }
-          .esg-text015 {
+          .esg-text014 {
             gap: 10px;
             display: flex;
             align-items: center;
           }
-          .esg-text016 {
+          .esg-text015 {
             color: var(--dl-color-carasso-primaryblack);
             width: 385px;
             height: auto;
@@ -891,23 +994,25 @@ const ESG = (props) => {
             text-decoration: none;
           }
           .esg-frame1261158160 {
-            gap: 50px;
             width: 405px;
             display: flex;
             align-items: center;
             flex-shrink: 0;
+            margin-left: var(--dl-space-space-oneandhalfunits);
+            margin-right: var(--dl-space-space-oneandhalfunits);
             flex-direction: column;
           }
           .esg-icon02 {
             width: 99px;
             height: 99px;
+            margin-bottom: var(--dl-space-space-twounits);
           }
           .esg-headline1 {
             gap: 10px;
             display: flex;
             align-items: center;
           }
-          .esg-text018 {
+          .esg-text017 {
             color: rgba(0, 0, 0, 1);
             height: auto;
             direction: rtl;
@@ -918,14 +1023,15 @@ const ESG = (props) => {
             font-weight: 400;
             line-height: 129.99999523162842%;
             font-stretch: normal;
+            margin-bottom: var(--dl-space-space-twounits);
             text-decoration: none;
           }
-          .esg-text020 {
+          .esg-text019 {
             gap: 10px;
             display: flex;
             align-items: center;
           }
-          .esg-text021 {
+          .esg-text020 {
             color: var(--dl-color-carasso-primaryblack);
             width: 379px;
             height: auto;
@@ -939,27 +1045,29 @@ const ESG = (props) => {
             font-stretch: normal;
             text-decoration: none;
           }
-          .esg-text022 {
+          .esg-text021 {
             font-weight: 300;
           }
           .esg-frame1261158161 {
-            gap: 50px;
             width: 407px;
             display: flex;
             align-items: center;
             flex-shrink: 0;
+            margin-left: var(--dl-space-space-oneandhalfunits);
+            margin-right: var(--dl-space-space-oneandhalfunits);
             flex-direction: column;
           }
           .esg-icon03 {
             width: 99px;
             height: 99px;
+            margin-bottom: var(--dl-space-space-twounits);
           }
           .esg-frame1261158211 {
             gap: 10px;
             display: flex;
             align-items: center;
           }
-          .esg-text029 {
+          .esg-text028 {
             color: rgba(0, 0, 0, 1);
             height: auto;
             font-size: 24px;
@@ -969,6 +1077,7 @@ const ESG = (props) => {
             font-weight: 400;
             line-height: 129.99999523162842%;
             font-stretch: normal;
+            margin-bottom: var(--dl-space-space-twounits);
             text-decoration: none;
           }
           .esg-frame1261158210 {
@@ -976,7 +1085,7 @@ const ESG = (props) => {
             display: flex;
             align-items: center;
           }
-          .esg-text031 {
+          .esg-text030 {
             color: var(--dl-color-carasso-primaryblack);
             width: 371px;
             height: auto;
@@ -991,18 +1100,16 @@ const ESG = (props) => {
             text-decoration: none;
           }
           .esg-frame1261158164 {
-            gap: 48px;
             display: flex;
             align-self: stretch;
             align-items: center;
             flex-direction: column;
           }
           .esg-content1 {
-            gap: 10px;
             display: flex;
             align-items: center;
           }
-          .esg-text033 {
+          .esg-text032 {
             color: var(--dl-color-carasso-primaryblack);
             width: 696px;
             height: auto;
@@ -1014,6 +1121,7 @@ const ESG = (props) => {
             font-weight: 300;
             line-height: 129.99999523162842%;
             font-stretch: normal;
+            margin-bottom: var(--dl-space-space-threeunits);
             text-decoration: none;
           }
           .esg-carassobutton {
@@ -1036,7 +1144,7 @@ const ESG = (props) => {
             width: 8px;
             height: 7px;
           }
-          .esg-text035 {
+          .esg-text034 {
             color: var(--dl-color-carasso-primaryblack);
             height: auto;
             font-size: 18px;
@@ -1048,7 +1156,7 @@ const ESG = (props) => {
             font-stretch: normal;
             text-decoration: none;
           }
-          .esg-text037 {
+          .esg-text036 {
             color: var(--dl-color-carasso-primaryblack);
             height: auto;
             font-size: 18px;
@@ -1060,22 +1168,19 @@ const ESG = (props) => {
             font-stretch: normal;
             text-decoration: none;
           }
-          .esg-container1 {
+          .esg-policy {
             width: 100%;
             height: auto;
             display: flex;
             padding: 120px 90px;
             align-self: stretch;
             align-items: center;
-            flex-shrink: 0;
             flex-direction: column;
+            justify-content: center;
             background-color: rgba(255, 255, 255, 1);
           }
           .esg-top {
-            gap: 42px;
             display: flex;
-            flex-grow: 1;
-            align-self: stretch;
             align-items: center;
             justify-content: center;
           }
@@ -1088,7 +1193,7 @@ const ESG = (props) => {
             flex-direction: column;
             justify-content: center;
           }
-          .esg-text039 {
+          .esg-text038 {
             color: var(--dl-color-carasso-primaryblack);
             width: 540px;
             height: auto;
@@ -1103,15 +1208,18 @@ const ESG = (props) => {
             text-decoration: none;
           }
           .esg-buttontextarrow1 {
-            gap: 8px;
-            display: flex;
-            align-items: center;
+            cursor: pointer;
           }
           .esg-caret-down {
             width: 12px;
             height: 12px;
+            transform: rotate(180deg);
+            transition: 0.3s;
           }
-          .esg-text041 {
+          .esg-caret-down:active {
+            transform: rotate(0deg);
+          }
+          .esg-text040 {
             color: var(--dl-color-carasso-primaryblack);
             height: auto;
             direction: rtl;
@@ -1129,6 +1237,7 @@ const ESG = (props) => {
             display: flex;
             position: relative;
             align-items: center;
+            margin-left: var(--dl-space-space-threeunits);
             justify-content: center;
           }
           .esg-memberblock {
@@ -1146,19 +1255,18 @@ const ESG = (props) => {
             background-color: rgba(255, 255, 255, 1);
           }
           .esg-topimage {
-            gap: 8.333333015441895px;
+            width: 100%;
+            height: 100%;
             display: flex;
-            padding: 8.333333015441895px;
+            padding: 8px;
             overflow: hidden;
-            flex-grow: 1;
             align-self: stretch;
             align-items: flex-start;
             flex-direction: column;
             background-size: cover;
-            background-image: d71e0d5c-41ad-4de2-be0f-a7422c8b0c3a;
+            background-image: url('/external/top-image1-1500h-1500h.webp');
           }
           .esg-bottomtext {
-            gap: 13.333333015441895px;
             display: flex;
             padding: 18px;
             overflow: hidden;
@@ -1173,7 +1281,7 @@ const ESG = (props) => {
             align-items: flex-end;
             flex-direction: column;
           }
-          .esg-text043 {
+          .esg-text042 {
             color: var(--dl-color-carasso-primaryblack);
             height: auto;
             font-size: 20px;
@@ -1185,7 +1293,7 @@ const ESG = (props) => {
             font-stretch: normal;
             text-decoration: none;
           }
-          .esg-text045 {
+          .esg-text044 {
             color: var(--dl-color-carasso-primaryblack);
             height: auto;
             font-size: 16px;
@@ -1206,16 +1314,9 @@ const ESG = (props) => {
             position: absolute;
           }
           .esg-bottom {
-            gap: 75px;
-            display: flex;
-            padding: 90px 0 0;
-            align-self: stretch;
-            align-items: center;
-            flex-shrink: 0;
-            justify-content: center;
+            display: none;
           }
           .esg-frame1261158208 {
-            gap: 34px;
             width: 576px;
             display: flex;
             flex-grow: 1;
@@ -1223,7 +1324,7 @@ const ESG = (props) => {
             flex-shrink: 0;
             flex-direction: column;
           }
-          .esg-text047 {
+          .esg-text046 {
             color: var(--dl-color-carasso-blue);
             height: auto;
             font-size: 18px;
@@ -1233,10 +1334,10 @@ const ESG = (props) => {
             font-weight: 500;
             line-height: 150%;
             font-stretch: normal;
+            margin-bottom: var(--dl-space-space-twounits);
             text-decoration: none;
           }
           .esg-frame1261158207 {
-            gap: 30px;
             display: flex;
             align-self: stretch;
             align-items: flex-end;
@@ -1266,11 +1367,10 @@ const ESG = (props) => {
             align-items: center;
             justify-content: flex-end;
           }
-          .esg-text049 {
+          .esg-text048 {
             color: var(--dl-color-carasso-primaryblack);
             height: auto;
             direction: rtl;
-            flex-grow: 1;
             font-size: 18px;
             font-style: Light;
             text-align: right;
@@ -1295,7 +1395,7 @@ const ESG = (props) => {
             height: 24px;
             position: absolute;
           }
-          .esg-text051 {
+          .esg-text050 {
             top: 5px;
             left: 8px;
             color: var(--dl-color-carasso-primaryblack);
@@ -1313,11 +1413,10 @@ const ESG = (props) => {
             gap: 12px;
             width: 50%;
             display: flex;
-            flex-grow: 1;
             align-items: center;
             justify-content: flex-end;
           }
-          .esg-text052 {
+          .esg-text051 {
             color: var(--dl-color-carasso-primaryblack);
             width: 250px;
             height: auto;
@@ -1346,7 +1445,7 @@ const ESG = (props) => {
             height: 24px;
             position: absolute;
           }
-          .esg-text054 {
+          .esg-text053 {
             top: 5px;
             left: 8.5px;
             color: var(--dl-color-carasso-primaryblack);
@@ -1376,11 +1475,10 @@ const ESG = (props) => {
             align-items: center;
             justify-content: flex-end;
           }
-          .esg-text055 {
+          .esg-text054 {
             color: var(--dl-color-carasso-primaryblack);
             height: auto;
             direction: rtl;
-            flex-grow: 1;
             font-size: 18px;
             max-width: 300px;
             font-style: Light;
@@ -1406,7 +1504,7 @@ const ESG = (props) => {
             height: 24px;
             position: absolute;
           }
-          .esg-text057 {
+          .esg-text056 {
             top: 5px;
             left: 8px;
             color: var(--dl-color-carasso-primaryblack);
@@ -1428,12 +1526,11 @@ const ESG = (props) => {
             align-items: center;
             justify-content: flex-end;
           }
-          .esg-text058 {
+          .esg-text057 {
             color: var(--dl-color-carasso-primaryblack);
             width: 250px;
             height: auto;
             direction: rtl;
-            flex-grow: 1;
             font-size: 18px;
             font-style: Light;
             text-align: right;
@@ -1458,7 +1555,7 @@ const ESG = (props) => {
             height: 24px;
             position: absolute;
           }
-          .esg-text060 {
+          .esg-text059 {
             top: 5px;
             left: 8px;
             color: var(--dl-color-carasso-primaryblack);
@@ -1473,15 +1570,15 @@ const ESG = (props) => {
             text-decoration: none;
           }
           .esg-frame1261158206 {
-            gap: 34px;
             width: 576px;
             display: flex;
             flex-grow: 1;
             align-items: flex-end;
             flex-shrink: 0;
+            margin-left: var(--dl-space-space-fiveunits);
             flex-direction: column;
           }
-          .esg-text061 {
+          .esg-text060 {
             color: var(--dl-color-carasso-blue);
             height: auto;
             direction: rtl;
@@ -1492,9 +1589,10 @@ const ESG = (props) => {
             font-weight: 300;
             line-height: 139.9999976158142%;
             font-stretch: normal;
+            margin-bottom: 34px;
             text-decoration: none;
           }
-          .esg-text063 {
+          .esg-text062 {
             color: var(--dl-color-carasso-primaryblack);
             height: auto;
             direction: rtl;
@@ -1508,8 +1606,10 @@ const ESG = (props) => {
             font-stretch: normal;
             text-decoration: none;
           }
+          .esg-container4 {
+            display: contents;
+          }
           .esg-kodeti {
-            gap: -47px;
             width: 100%;
             height: auto;
             display: flex;
@@ -1534,8 +1634,7 @@ const ESG = (props) => {
             justify-content: center;
           }
           .esg-frame332 {
-            gap: 60px;
-            width: 681px;
+            width: auto;
             display: flex;
             align-items: center;
             flex-shrink: 0;
@@ -1543,15 +1642,26 @@ const ESG = (props) => {
             justify-content: center;
           }
           .esg-frame331 {
-            gap: 60px;
             display: flex;
             align-items: center;
             flex-direction: column;
           }
           .esg-headline2 {
-            gap: 10px;
             display: flex;
             align-items: center;
+            margin-bottom: 60px;
+          }
+          .esg-text064 {
+            color: var(--dl-color-carasso-plainwhite);
+            height: auto;
+            font-size: 50px;
+            font-style: Light;
+            text-align: right;
+            font-family: 'Ploni ML v2 AAA Bold';
+            font-weight: 300;
+            line-height: 130%;
+            font-stretch: normal;
+            text-decoration: none;
           }
           .esg-text065 {
             color: var(--dl-color-carasso-plainwhite);
@@ -1559,21 +1669,19 @@ const ESG = (props) => {
             font-size: 50px;
             font-style: Light;
             text-align: right;
-            font-family: Ploni ML v2 AAA;
+            font-family: 'Ploni ML v2 AAA Light';
             font-weight: 300;
-            line-height: 129.99999523162842%;
+            line-height: 130%;
+            margin-left: var(--dl-space-space-unit);
             font-stretch: normal;
             text-decoration: none;
           }
           .esg-text066 {
-            font-weight: 300;
-          }
-          .esg-text070 {
             gap: 10px;
             display: flex;
             align-items: center;
           }
-          .esg-text071 {
+          .esg-text067 {
             color: var(--dl-color-carasso-plainwhite);
             width: 681px;
             height: auto;
@@ -1584,6 +1692,7 @@ const ESG = (props) => {
             font-weight: 300;
             line-height: 150%;
             font-stretch: normal;
+            margin-bottom: 60px;
             text-decoration: none;
           }
           .esg-carassobutton1 {
@@ -1604,7 +1713,7 @@ const ESG = (props) => {
             width: 8px;
             height: 7px;
           }
-          .esg-text073 {
+          .esg-text069 {
             color: var(--dl-color-carasso-plainwhite);
             height: auto;
             font-size: 18px;
@@ -1624,19 +1733,114 @@ const ESG = (props) => {
             z-index: 1;
             position: absolute;
           }
-          .esg-container2 {
+          .esg-contactusform {
+            gap: 10px;
+            width: 100%;
+            height: auto;
+            display: flex;
+            padding: 72px 90px;
+            z-index: 5;
+            align-self: stretch;
+            align-items: flex-end;
+            flex-direction: column;
+            justify-content: center;
+            background-color: #f6f6f6;
+          }
+          .esg-formwindowstage3 {
+            gap: 80px;
+            width: 1742px;
+            display: flex;
+            padding: 60px 0;
+            overflow: hidden;
+            align-items: center;
+            flex-shrink: 0;
+            border-radius: 20px;
+            flex-direction: column;
+            background-color: var(--dl-color-carasso-backgroundcolor);
+          }
+          .esg-frame1261158156 {
+            gap: 60px;
+            display: flex;
+            align-self: stretch;
+            align-items: center;
+            flex-direction: column;
+          }
+          .esg-formheader {
+            gap: 678px;
+            display: flex;
+            align-self: stretch;
+            align-items: flex-start;
+            flex-shrink: 0;
+            justify-content: space-between;
+          }
+          .esg-formclose {
+            gap: 10px;
+            width: 20px;
+            display: flex;
+            align-items: flex-start;
+            flex-shrink: 0;
+            justify-content: space-between;
+          }
+          .esg-formheaders {
+            gap: 15px;
+            display: flex;
+            align-items: flex-end;
+            flex-direction: row-reverse;
+          }
+          .esg-text071 {
+            color: var(--dl-color-carasso-primaryblack);
+            height: auto;
+            font-size: 50px;
+            font-style: Light;
+            text-align: right;
+            font-family: 'Ploni ML v2 AAA Light';
+            font-weight: 300;
+            font-stretch: normal;
+            text-decoration: none;
+          }
+          .esg-text072 {
+            color: var(--dl-color-carasso-primaryblack);
+            height: auto;
+            font-size: 50px;
+            font-style: Light;
+            text-align: right;
+            font-family: 'Ploni ML v2 AAA D-Bold';
+            font-weight: 300;
+            font-stretch: normal;
+            text-decoration: none;
+          }
+          .esg-frame166 {
+            gap: 30px;
+            display: flex;
+            align-self: stretch;
+            align-items: flex-start;
+            flex-direction: column;
+          }
+          .esg-frame164 {
+            gap: 20px;
+            display: flex;
+            align-self: stretch;
+            align-items: flex-start;
+            flex-shrink: 0;
+          }
+          .esg-container5 {
+            width: 100%;
+          }
+          .esg-container6 {
+            display: contents;
+          }
+          .esg-footer {
             width: 100%;
             height: auto;
             display: flex;
             overflow: hidden;
             align-self: stretch;
             align-items: flex-start;
-            flex-shrink: 0;
+            flex-direction: row;
             justify-content: flex-end;
           }
           .esg-leftcoloumn {
-            gap: 80px;
-            height: 471px;
+            width: 50%;
             display: flex;
             padding: 80px 109px 80px 90px;
             align-self: stretch;
@@ -1646,18 +1850,17 @@ const ESG = (props) => {
             justify-content: center;
           }
           .esg-links {
-            gap: 70px;
             display: flex;
             align-items: flex-start;
+            margin-bottom: var(--dl-space-space-twounits);
             justify-content: flex-end;
           }
           .esg-linksrow2 {
-            gap: 40px;
             display: flex;
             align-items: flex-end;
             flex-direction: column;
           }
-          .esg-text075 {
+          .esg-text073 {
             color: var(--dl-color-carasso-primaryblack);
             height: auto;
             font-size: 18px;
@@ -1667,6 +1870,7 @@ const ESG = (props) => {
             font-weight: 500;
             line-height: normal;
             font-stretch: normal;
+            margin-bottom: 40px;
             text-decoration: none;
           }
           .esg-links1 {
@@ -1682,7 +1886,7 @@ const ESG = (props) => {
             flex-direction: column;
             justify-content: center;
           }
-          .esg-text077 {
+          .esg-text075 {
             color: var(--dl-color-carasso-darkergray);
             height: auto;
             font-size: 18px;
@@ -1691,6 +1895,18 @@ const ESG = (props) => {
             font-family: Ploni ML v2 AAA;
             font-weight: 300;
             line-height: normal;
+            font-stretch: normal;
+            text-decoration: none;
+          }
+          .esg-text077 {
+            color: var(--dl-color-carasso-darkergray);
+            height: auto;
+            font-size: 18px;
+            font-style: Light;
+            text-align: right;
+            font-family: 'Ploni ML v2 AAA';
+            font-weight: 300;
+            line-height: 104.99999523162842%;
             font-stretch: normal;
             text-decoration: none;
           }
@@ -1712,19 +1928,7 @@ const ESG = (props) => {
             font-size: 18px;
             font-style: Light;
             text-align: right;
-            font-family: Ploni ML v2 AAA;
-            font-weight: 300;
-            line-height: 104.99999523162842%;
-            font-stretch: normal;
-            text-decoration: none;
-          }
-          .esg-text083 {
-            color: var(--dl-color-carasso-darkergray);
-            height: auto;
-            font-size: 18px;
-            font-style: Light;
-            text-align: right;
-            font-family: Ploni ML v2 AAA;
+            font-family: 'Ploni ML v2 AAA';
             font-weight: 300;
             line-height: 104.99999523162842%;
             font-stretch: normal;
@@ -1748,12 +1952,12 @@ const ESG = (props) => {
             height: 24px;
           }
           .esg-linksrow21 {
-            gap: 40px;
             display: flex;
             align-items: flex-end;
+            margin-left: 70px;
             flex-direction: column;
           }
-          .esg-text085 {
+          .esg-text083 {
             color: var(--dl-color-carasso-primaryblack);
             height: auto;
             font-size: 18px;
@@ -1763,6 +1967,7 @@ const ESG = (props) => {
             font-weight: 500;
             line-height: normal;
             font-stretch: normal;
+            margin-bottom: 40px;
             text-decoration: none;
           }
           .esg-links2 {
@@ -1770,6 +1975,18 @@ const ESG = (props) => {
             display: flex;
             align-items: flex-end;
             flex-direction: column;
+          }
+          .esg-text085 {
+            color: var(--dl-color-carasso-darkergray);
+            height: auto;
+            font-size: 18px;
+            font-style: Light;
+            text-align: right;
+            font-family: Ploni ML v2 AAA;
+            font-weight: 300;
+            line-height: normal;
+            font-stretch: normal;
+            text-decoration: none;
           }
           .esg-text087 {
             color: var(--dl-color-carasso-darkergray);
@@ -1807,7 +2024,32 @@ const ESG = (props) => {
             font-stretch: normal;
             text-decoration: none;
           }
+          .esg-linksrow1 {
+            display: flex;
+            align-items: flex-end;
+            margin-left: 70px;
+            flex-direction: column;
+          }
           .esg-text093 {
+            color: var(--dl-color-carasso-primaryblack);
+            height: auto;
+            font-size: 18px;
+            font-style: Medium;
+            text-align: right;
+            font-family: Ploni ML v2 AAA;
+            font-weight: 500;
+            line-height: normal;
+            font-stretch: normal;
+            margin-bottom: 40px;
+            text-decoration: none;
+          }
+          .esg-links3 {
+            gap: 24px;
+            display: flex;
+            align-items: flex-end;
+            flex-direction: column;
+          }
+          .esg-text095 {
             color: var(--dl-color-carasso-darkergray);
             height: auto;
             font-size: 18px;
@@ -1818,30 +2060,6 @@ const ESG = (props) => {
             line-height: normal;
             font-stretch: normal;
             text-decoration: none;
-          }
-          .esg-linksrow1 {
-            gap: 40px;
-            display: flex;
-            align-items: flex-end;
-            flex-direction: column;
-          }
-          .esg-text095 {
-            color: var(--dl-color-carasso-primaryblack);
-            height: auto;
-            font-size: 18px;
-            font-style: Medium;
-            text-align: right;
-            font-family: Ploni ML v2 AAA;
-            font-weight: 500;
-            line-height: normal;
-            font-stretch: normal;
-            text-decoration: none;
-          }
-          .esg-links3 {
-            gap: 24px;
-            display: flex;
-            align-items: flex-end;
-            flex-direction: column;
           }
           .esg-text097 {
             color: var(--dl-color-carasso-darkergray);
@@ -1891,18 +2109,6 @@ const ESG = (props) => {
             font-stretch: normal;
             text-decoration: none;
           }
-          .esg-text105 {
-            color: var(--dl-color-carasso-darkergray);
-            height: auto;
-            font-size: 18px;
-            font-style: Light;
-            text-align: right;
-            font-family: Ploni ML v2 AAA;
-            font-weight: 300;
-            line-height: normal;
-            font-stretch: normal;
-            text-decoration: none;
-          }
           .esg-info {
             gap: 24px;
             display: flex;
@@ -1910,9 +2116,21 @@ const ESG = (props) => {
             flex-direction: column;
           }
           .esg-termslinks {
-            gap: 30px;
             display: flex;
             align-items: center;
+          }
+          .esg-text105 {
+            color: rgba(153, 153, 153, 1);
+            height: auto;
+            font-size: 16px;
+            font-style: Light;
+            text-align: right;
+            font-family: Ploni ML v2 AAA;
+            font-weight: 300;
+            line-height: normal;
+            margin-left: var(--dl-space-space-twounits);
+            font-stretch: normal;
+            text-decoration: none;
           }
           .esg-text107 {
             color: rgba(153, 153, 153, 1);
@@ -1923,6 +2141,7 @@ const ESG = (props) => {
             font-family: Ploni ML v2 AAA;
             font-weight: 300;
             line-height: normal;
+            margin-left: var(--dl-space-space-twounits);
             font-stretch: normal;
             text-decoration: none;
           }
@@ -1935,8 +2154,14 @@ const ESG = (props) => {
             font-family: Ploni ML v2 AAA;
             font-weight: 300;
             line-height: normal;
+            margin-left: var(--dl-space-space-twounits);
             font-stretch: normal;
             text-decoration: none;
+          }
+          .esg-frame56 {
+            gap: 5px;
+            display: flex;
+            align-items: center;
           }
           .esg-text111 {
             color: rgba(153, 153, 153, 1);
@@ -1947,45 +2172,29 @@ const ESG = (props) => {
             font-family: Ploni ML v2 AAA;
             font-weight: 300;
             line-height: normal;
-            font-stretch: normal;
-            text-decoration: none;
-          }
-          .esg-frame56 {
-            gap: 5px;
-            display: flex;
-            align-items: center;
-          }
-          .esg-text113 {
-            color: rgba(153, 153, 153, 1);
-            height: auto;
-            font-size: 16px;
-            font-style: Light;
-            text-align: right;
-            font-family: Ploni ML v2 AAA;
-            font-weight: 300;
-            line-height: normal;
+            margin-left: var(--dl-space-space-twounits);
             font-stretch: normal;
             text-decoration: none;
           }
           .esg-copyright {
             width: 16px;
             height: 16px;
+            margin-left: var(--dl-space-space-twounits);
           }
           .esg-rightcoloumn {
-            gap: 90px;
+            width: 25%;
             height: 471px;
             display: flex;
             padding: 80px 90px 80px 220px;
             position: relative;
             align-self: stretch;
             align-items: flex-end;
-            flex-shrink: 0;
             flex-direction: column;
             justify-content: space-between;
           }
           .esg-vector2 {
             top: 210px;
-            left: 45.0390625px;
+            left: 45px;
             width: 559px;
             height: 417px;
             position: absolute;
@@ -2010,7 +2219,7 @@ const ESG = (props) => {
             align-items: center;
             justify-content: center;
           }
-          .esg-text115 {
+          .esg-text113 {
             color: var(--dl-color-carasso-graytextcolor);
             height: auto;
             font-size: 14px;
@@ -2035,11 +2244,17 @@ const ESG = (props) => {
               padding-left: var(--dl-space-space-twounits);
               padding-right: var(--dl-space-space-twounits);
             }
-            .esg-image1 {
+            .esg-gallery {
               justify-content: center;
             }
             .esg-frame1261158212 {
               height: auto;
+            }
+            .esg-formwindowstage3 {
+              width: 100%;
+            }
+            .esg-leftcoloumn {
+              width: 60%;
             }
           }
           @media (max-width: 1200px) {
@@ -2047,11 +2262,24 @@ const ESG = (props) => {
               padding-left: var(--dl-space-space-twounits);
               padding-right: var(--dl-space-space-twounits);
             }
-            .esg-image1 {
+            .esg-gallery {
               justify-content: center;
             }
             .esg-slider {
-              width: 550px;
+              width: 600px;
+            }
+            .esg-slider-slide {
+              width: 100%;
+              height: auto;
+            }
+            .esg-image1 {
+              width: 90%;
+            }
+            .esg-image2 {
+              width: 90%;
+            }
+            .esg-image3 {
+              width: 90%;
             }
             .esg-frame3examples {
               padding-left: var(--dl-space-space-twounits);
@@ -2062,14 +2290,20 @@ const ESG = (props) => {
             }
             .esg-frame1261158159 {
               width: auto;
+              margin-left: 0px;
+              margin-right: 0px;
             }
             .esg-frame1261158160 {
               width: auto;
+              margin-left: var(--dl-space-space-unit);
+              margin-right: var(--dl-space-space-unit);
             }
             .esg-frame1261158161 {
               width: auto;
+              margin-left: 0px;
+              margin-right: 0px;
             }
-            .esg-container1 {
+            .esg-policy {
               padding-left: var(--dl-space-space-twounits);
               padding-right: var(--dl-space-space-twounits);
             }
@@ -2082,22 +2316,54 @@ const ESG = (props) => {
             .esg-frame1261158212 {
               height: auto;
             }
+            .esg-formwindowstage3 {
+              width: 100%;
+            }
+            .esg-leftcoloumn {
+              width: 70%;
+            }
           }
           @media (max-width: 991px) {
+            .esg-herotext {
+              width: auto;
+            }
+            .esg-text {
+              width: auto;
+            }
             .esg-memories {
               height: 100%;
             }
             .esg-content-imagecontainer {
               gap: 50px;
-              width: auto;
+              width: 100%;
               flex-grow: unset;
               flex-direction: column;
             }
-            .esg-image1 {
+            .esg-gallery {
               flex-grow: unset;
+            }
+            .esg-slider {
+              width: 800px;
+            }
+            .esg-slider-slide {
+              margin-bottom: var(--dl-space-space-unit);
+            }
+            .esg-slider-slide1 {
+              margin-bottom: var(--dl-space-space-unit);
+            }
+            .esg-slider-slide2 {
+              margin-bottom: var(--dl-space-space-unit);
             }
             .esg-content {
               align-items: center;
+              margin-left: 0px;
+            }
+            .esg-text005 {
+              width: 50%;
+              text-align: center;
+            }
+            .esg-text007 {
+              align-self: center;
             }
             .esg-headlinescontainer {
               width: auto;
@@ -2107,7 +2373,7 @@ const ESG = (props) => {
               align-items: center;
               justify-content: center;
             }
-            .esg-text011 {
+            .esg-text010 {
               width: 100%;
               align-self: center;
             }
@@ -2115,21 +2381,53 @@ const ESG = (props) => {
               align-items: center;
               flex-direction: column;
             }
-            .esg-bottom {
-              width: 100%;
-              flex-direction: column-reverse;
+            .esg-frame1261158159 {
+              margin-top: var(--dl-space-space-oneandhalfunits);
+              margin-bottom: var(--dl-space-space-oneandhalfunits);
+            }
+            .esg-frame1261158160 {
+              margin-top: var(--dl-space-space-oneandhalfunits);
+              margin-bottom: var(--dl-space-space-oneandhalfunits);
+            }
+            .esg-frame1261158161 {
+              margin-top: var(--dl-space-space-oneandhalfunits);
+              margin-bottom: var(--dl-space-space-oneandhalfunits);
+            }
+            .esg-text032 {
+              width: auto;
             }
             .esg-frame1261158208 {
               width: 100%;
             }
+            .esg-frame1261158216 {
+              margin-bottom: var(--dl-space-space-twounits);
+            }
+            .esg-text057 {
+              width: 100%;
+            }
             .esg-frame1261158206 {
               width: 100%;
+              margin-left: 0px;
+              margin-bottom: var(--dl-space-space-twounits);
+            }
+            .esg-kodeti {
+              padding-left: var(--dl-space-space-twounits);
+              padding-right: var(--dl-space-space-twounits);
             }
             .esg-frame1261158212 {
               height: 100%;
             }
-            .esg-container2 {
+            .esg-formwindowstage3 {
+              width: 100%;
+            }
+            .esg-footer {
               flex-direction: column;
+            }
+            .esg-leftcoloumn {
+              width: 100%;
+            }
+            .esg-rightcoloumn {
+              width: 100%;
             }
           }
           @media (max-width: 767px) {
@@ -2139,6 +2437,25 @@ const ESG = (props) => {
             .esg-text {
               width: 100%;
             }
+            .esg-gallery {
+              width: 100%;
+            }
+            .esg-slider {
+              width: 100%;
+            }
+            .esg-image1 {
+              width: 100%;
+            }
+            .esg-image2 {
+              width: 90%;
+            }
+            .esg-image3 {
+              width: 90%;
+            }
+            .esg-text005 {
+              width: 100%;
+              text-align: center;
+            }
             .esg-headlinecontent {
               width: 100%;
               align-items: center;
@@ -2147,27 +2464,46 @@ const ESG = (props) => {
             .esg-headline01 {
               width: 100%;
             }
-            .esg-text009 {
+            .esg-text008 {
               width: 100%;
             }
-            .esg-text011 {
+            .esg-text010 {
               width: 100%;
             }
             .esg-top {
               flex-direction: column;
             }
+            .esg-frame1261158205 {
+              margin-bottom: var(--dl-space-space-twounits);
+            }
+            .esg-kodeti {
+              padding-left: var(--dl-space-space-twounits);
+              padding-right: var(--dl-space-space-twounits);
+            }
             .esg-frame1261158212 {
+              width: 100%;
               height: auto;
             }
             .esg-frame331 {
               width: 100%;
             }
-            .esg-text071 {
+            .esg-text067 {
               width: 100%;
             }
             .esg-vector1 {
               top: 300px;
               left: -150px;
+            }
+            .esg-formwindowstage3 {
+              width: 100%;
+            }
+            .esg-leftcoloumn {
+              padding-left: var(--dl-space-space-twounits);
+              padding-right: var(--dl-space-space-twounits);
+            }
+            .esg-rightcoloumn {
+              padding-left: var(--dl-space-space-twounits);
+              padding-right: var(--dl-space-space-twounits);
             }
           }
           @media (max-width: 479px) {
@@ -2180,30 +2516,40 @@ const ESG = (props) => {
             .esg-content-imagecontainer {
               width: 100%;
             }
-            .esg-slider {
-              width: 100%;
-            }
             .esg-text005 {
               width: 100%;
+            }
+            .esg-text007 {
+              color: var(--dl-color-carasso-primaryblack);
+              font-size: 20px;
+              text-align: center;
+              font-family: Ploni ML v2 AAA;
+              font-weight: 300;
+              line-height: 130%;
+              text-decoration: none;
             }
             .esg-headlinecontent {
               align-items: center;
               justify-content: center;
             }
-            .esg-text009 {
+            .esg-text008 {
               width: 100%;
             }
-            .esg-text011 {
+            .esg-text010 {
               width: 100%;
             }
-            .esg-text033 {
+            .esg-text032 {
               width: 100%;
             }
             .esg-frame1261158205 {
               width: 100%;
+              margin-bottom: var(--dl-space-space-threeunits);
             }
-            .esg-text039 {
+            .esg-text038 {
               width: 100%;
+            }
+            .esg-topimage {
+              background-position: center;
             }
             .esg-frame1261158216 {
               flex-direction: column-reverse;
@@ -2223,14 +2569,43 @@ const ESG = (props) => {
             .esg-frame1261158201 {
               width: 100%;
             }
+            .esg-kodeti {
+              padding-left: var(--dl-space-space-twounits);
+              padding-right: var(--dl-space-space-twounits);
+            }
             .esg-frame1261158212 {
               width: 100%;
+              z-index: 5;
             }
             .esg-frame332 {
               width: 100%;
             }
-            .esg-text071 {
+            .esg-text067 {
               width: 100%;
+            }
+            .esg-vector1 {
+              top: 450px;
+            }
+            .esg-contactusform {
+              padding-left: var(--dl-space-space-unit);
+              padding-right: var(--dl-space-space-unit);
+            }
+            .esg-formwindowstage3 {
+              width: 100%;
+            }
+            .esg-leftcoloumn {
+              padding-left: var(--dl-space-space-twounits);
+              padding-right: var(--dl-space-space-twounits);
+            }
+            .esg-linksrow21 {
+              margin-left: var(--dl-space-space-oneandhalfunits);
+            }
+            .esg-linksrow1 {
+              margin-left: var(--dl-space-space-oneandhalfunits);
+            }
+            .esg-rightcoloumn {
+              padding-left: var(--dl-space-space-twounits);
+              padding-right: var(--dl-space-space-twounits);
             }
           }
         `}
