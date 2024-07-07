@@ -4,7 +4,7 @@ import Head from 'next/head'
 import { DataProvider, Repeater } from '@teleporthq/react-components'
 import PropTypes from 'prop-types'
 
-import officesPageInitialPropsTqYmResource from '../../resources/offices-page-initial-props-tq_ym'
+import officesPageInitialPropsTqSPResource from '../../resources/offices-page-initial-props-tq_s-p'
 
 const Offices = (props) => {
   return (
@@ -78,7 +78,7 @@ export default Offices
 
 export async function getStaticProps(context) {
   try {
-    const response = await officesPageInitialPropsTqYmResource({
+    const response = await officesPageInitialPropsTqSPResource({
       ...context?.params,
     })
     if (!response) {

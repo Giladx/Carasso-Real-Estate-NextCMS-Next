@@ -114,27 +114,27 @@ const UrbanRenew = (props) => {
           <div className="urban-renew-content1">
             <div className="urban-renew-frame222">
               <span className="urban-renew-text10">
-                <span className="urban-renew-text11">
-                  הצוות
+                <span className="urban-renew-text11">הצוות</span>
+                <span className="urban-renew-text12">
                   <span
                     dangerouslySetInnerHTML={{
                       __html: ' ',
                     }}
                   />
                 </span>
-                <span className="urban-renew-text12">שלנו</span>
+                <span className="urban-renew-text13">שלנו</span>
               </span>
             </div>
             <div className="urban-renew-team">
               <div className="urban-renew-memberblock">
                 <div className="urban-renew-topimage"></div>
                 <div className="urban-renew-bottomtext">
-                  <div className="urban-renew-frame280">
-                    <span className="urban-renew-text13">
-                      <span>אתל מלכא</span>
+                  <div className="urban-renew-frame279">
+                    <span className="urban-renew-text14">
+                      <span>אברהם שמש</span>
                     </span>
-                    <span className="urban-renew-text15">
-                      <span>רכזת התחדשות עירונית</span>
+                    <span className="urban-renew-text16">
+                      <span>מנהל תחום התחדשות עירונית</span>
                     </span>
                   </div>
                 </div>
@@ -142,12 +142,10 @@ const UrbanRenew = (props) => {
               <div className="urban-renew-memberblock1">
                 <div className="urban-renew-topimage1"></div>
                 <div className="urban-renew-bottomtext1">
-                  <div className="urban-renew-frame2801">
-                    <span className="urban-renew-text17">
-                      <span>בועז שיקלר</span>
-                    </span>
+                  <div className="urban-renew-frame2791">
+                    <span className="urban-renew-text18">אטל מלכא</span>
                     <span className="urban-renew-text19">
-                      <span>מנהל פרויקטים</span>
+                      רכזת התחדשות עירונית בכירה
                     </span>
                   </div>
                 </div>
@@ -155,26 +153,36 @@ const UrbanRenew = (props) => {
               <div className="urban-renew-memberblock2">
                 <div className="urban-renew-topimage2"></div>
                 <div className="urban-renew-bottomtext2">
-                  <div className="urban-renew-frame279">
-                    <span className="urban-renew-text21">
-                      <span>עידן קניג</span>
-                    </span>
-                    <span className="urban-renew-text23">
-                      <span>מנהל ייזום עסקי</span>
-                    </span>
+                  <div className="urban-renew-frame280">
+                    <span className="urban-renew-text20">אסף טולדנו</span>
+                    <span className="urban-renew-text21">מנהל קשרי קהילה</span>
                   </div>
                 </div>
               </div>
               <div className="urban-renew-memberblock3">
                 <div className="urban-renew-topimage3"></div>
                 <div className="urban-renew-bottomtext3">
-                  <div className="urban-renew-frame2791">
-                    <span className="urban-renew-text25">
-                      <span>אברהם שמש</span>
-                    </span>
-                    <span className="urban-renew-text27">
-                      <span>מנהל תחום התחדשות עירונית</span>
-                    </span>
+                  <div className="urban-renew-frame2801">
+                    <span className="urban-renew-text22">עידן קניג</span>
+                    <span className="urban-renew-text23">מנהל ייזום עסקי</span>
+                  </div>
+                </div>
+              </div>
+              <div className="urban-renew-memberblock4">
+                <div className="urban-renew-topimage4"></div>
+                <div className="urban-renew-bottomtext4">
+                  <div className="urban-renew-frame2802">
+                    <span className="urban-renew-text24">בועז שיקלר</span>
+                    <span className="urban-renew-text25">מנהל פרוייקטים</span>
+                  </div>
+                </div>
+              </div>
+              <div className="urban-renew-memberblock5">
+                <div className="urban-renew-topimage5"></div>
+                <div className="urban-renew-bottomtext5">
+                  <div className="urban-renew-frame2803">
+                    <span className="urban-renew-text26">בועז שיקלר</span>
+                    <span className="urban-renew-text27">מנהל פרוייקטים</span>
                   </div>
                 </div>
               </div>
@@ -182,10 +190,10 @@ const UrbanRenew = (props) => {
           </div>
           <div className="urban-renew-content2">
             <div className="urban-renew-frame1261158166">
-              <span className="urban-renew-text29">
+              <span className="urban-renew-text28">
                 <span>מובילים בדירוג</span>
               </span>
-              <span className="urban-renew-text31">
+              <span className="urban-renew-text30">
                 <span>
                   קרסו מובילה בדירוגים החשובים ביותר בתחום הבנייה בכלל ובהתחדשות
                   עירונית בפרט
@@ -201,7 +209,7 @@ const UrbanRenew = (props) => {
               <div className="urban-renew-frame219">
                 <img
                   alt="image165030"
-                  src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/e6d869ac-5e69-4dae-a864-fa816f5ebf6c/3954f6e2-ec40-4408-b752-f1a3fed73773?org_if_sml=11919&amp;force_format=original"
+                  src="/external/image165030-tkmc-200h-200h.webp"
                   className="urban-renew-image16"
                 />
               </div>
@@ -220,8 +228,8 @@ const UrbanRenew = (props) => {
               src="/external/room.svg"
               className="urban-renew-image3"
             />
-            <span className="urban-renew-text33">
-              <span className="urban-renew-text34">
+            <span className="urban-renew-text32">
+              <span className="urban-renew-text33">
                 מה צפוי בתהליך
                 <span
                   dangerouslySetInnerHTML={{
@@ -235,25 +243,25 @@ const UrbanRenew = (props) => {
               <div className="urban-renew-frame136">
                 <div className="urban-renew-frame1261158169">
                   <div className="urban-renew-frame1361">
-                    <span className="urban-renew-text36">
+                    <span className="urban-renew-text35">
                       <span>אנחנו כאן בשבילכם</span>
                     </span>
-                    <span className="urban-renew-text38">
+                    <span className="urban-renew-text37">
                       <span>תקופת בדק</span>
                       <br></br>
                       <span>ואחריות</span>
                     </span>
                   </div>
-                  <span className="urban-renew-text42">7</span>
+                  <span className="urban-renew-text41">7</span>
                 </div>
               </div>
               <div className="urban-renew-frame142">
                 <div className="urban-renew-frame1261158168">
                   <div className="urban-renew-frame1362">
-                    <span className="urban-renew-text43">
+                    <span className="urban-renew-text42">
                       <span>מסירת הדירות</span>
                     </span>
-                    <span className="urban-renew-text45">
+                    <span className="urban-renew-text44">
                       <span>בשעה טובה :)</span>
                       <br></br>
                       <span>נכנסים הביתה ורושמים</span>
@@ -261,16 +269,16 @@ const UrbanRenew = (props) => {
                       <span>את הבית המשותף</span>
                     </span>
                   </div>
-                  <span className="urban-renew-text51">6</span>
+                  <span className="urban-renew-text50">6</span>
                 </div>
               </div>
               <div className="urban-renew-frame141">
                 <div className="urban-renew-container05">
                   <div className="urban-renew-frame1363">
-                    <span className="urban-renew-text52">
+                    <span className="urban-renew-text51">
                       <span>בנייה</span>
                     </span>
-                    <span className="urban-renew-text54">
+                    <span className="urban-renew-text53">
                       <span>מהקומה העליונה כבר</span>
                       <br></br>
                       <span>רואים את הסוף</span>
@@ -278,65 +286,65 @@ const UrbanRenew = (props) => {
                       <span>כ-36 חודשים</span>
                     </span>
                   </div>
-                  <span className="urban-renew-text60">5</span>
+                  <span className="urban-renew-text59">5</span>
                 </div>
               </div>
               <div className="urban-renew-frame140">
                 <div className="urban-renew-container06">
                   <div className="urban-renew-frame1364">
-                    <span className="urban-renew-text61">
+                    <span className="urban-renew-text60">
                       <span>עוד בירוקרטיה</span>
                     </span>
-                    <span className="urban-renew-text63">
+                    <span className="urban-renew-text62">
                       <span>רישוי וקבלת היתר בנייה</span>
                       <br></br>
                       <span>כ-24 חודשים מקליטת הבקשה</span>
                     </span>
                   </div>
-                  <span className="urban-renew-text67">4</span>
+                  <span className="urban-renew-text66">4</span>
                 </div>
               </div>
               <div className="urban-renew-frame138">
                 <div className="urban-renew-container07">
                   <div className="urban-renew-frame1365">
-                    <span className="urban-renew-text68">
+                    <span className="urban-renew-text67">
                       <span>בירוקרטיה</span>
                     </span>
-                    <span className="urban-renew-text70">
+                    <span className="urban-renew-text69">
                       <span>תכנון ואישור תב״ע</span>
                       <br></br>
                       <span>כ-36 חודשים</span>
                     </span>
                   </div>
-                  <span className="urban-renew-text74">3</span>
+                  <span className="urban-renew-text73">3</span>
                 </div>
               </div>
               <div className="urban-renew-frame139">
                 <div className="urban-renew-container08">
                   <div className="urban-renew-frame1366">
-                    <span className="urban-renew-text75">
+                    <span className="urban-renew-text74">
                       <span>שותפות</span>
                     </span>
-                    <span className="urban-renew-text77">
+                    <span className="urban-renew-text76">
                       <span>בחירת יזם וחתימה</span>
                       <br></br>
                       <span>על הסכם</span>
                     </span>
                   </div>
-                  <span className="urban-renew-text81">2</span>
+                  <span className="urban-renew-text80">2</span>
                 </div>
               </div>
               <div className="urban-renew-frame137">
                 <div className="urban-renew-container09">
                   <div className="urban-renew-frame135">
-                    <span className="urban-renew-text82">
+                    <span className="urban-renew-text81">
                       <span>התנעה</span>
                     </span>
-                    <span className="urban-renew-text84">
+                    <span className="urban-renew-text83">
                       <span>מינוי נציגות דיירים, עו״ד ומפקח</span>
                     </span>
                   </div>
-                  <span className="urban-renew-text86">1</span>
+                  <span className="urban-renew-text85">1</span>
                 </div>
               </div>
             </div>
@@ -657,8 +665,9 @@ svg.active .svg-elem-1 {
             gap: 60px;
             display: flex;
             z-index: 1;
+            direction: rtl;
             align-self: stretch;
-            align-items: flex-start;
+            align-items: center;
             flex-direction: column;
           }
           .urban-renew-frame222 {
@@ -682,10 +691,10 @@ svg.active .svg-elem-1 {
           }
           .urban-renew-team {
             gap: 20px;
-            display: flex;
-            align-self: stretch;
+            display: grid;
             align-items: flex-start;
             flex-shrink: 0;
+            grid-template-columns: repeat(3, 1fr);
           }
           .urban-renew-memberblock {
             width: 300px;
@@ -703,7 +712,6 @@ svg.active .svg-elem-1 {
           }
           .urban-renew-topimage {
             gap: 10px;
-            width: 100%;
             height: 347px;
             display: flex;
             padding: 10px;
@@ -713,7 +721,8 @@ svg.active .svg-elem-1 {
             align-items: flex-start;
             flex-direction: column;
             background-size: cover;
-            background-image: url('/external/top-image-400h-1500w.webp');
+            background-image: url('https://images.ctfassets.net/kqstdfjhkjd5/5WhOvVjb4zKxjvMysWJ3Nb/aa9edfbead870394c4ed3400557d3416/Carasso_Photos_02_2024-7400993__ID_626394_.jpg');
+            background-position: center;
           }
           .urban-renew-bottomtext {
             display: flex;
@@ -724,13 +733,13 @@ svg.active .svg-elem-1 {
             flex-shrink: 0;
             justify-content: flex-end;
           }
-          .urban-renew-frame280 {
+          .urban-renew-frame279 {
             gap: 16px;
             display: flex;
             align-items: flex-end;
             flex-direction: column;
           }
-          .urban-renew-text13 {
+          .urban-renew-text14 {
             color: var(--dl-color-carasso-primaryblack);
             height: auto;
             font-size: 24px;
@@ -742,7 +751,7 @@ svg.active .svg-elem-1 {
             font-stretch: normal;
             text-decoration: none;
           }
-          .urban-renew-text15 {
+          .urban-renew-text16 {
             color: var(--dl-color-carasso-primaryblack);
             height: auto;
             font-size: 16px;
@@ -779,7 +788,8 @@ svg.active .svg-elem-1 {
             align-items: flex-start;
             flex-direction: column;
             background-size: cover;
-            background-image: url('/external/top-image%20(1)1-400h-1500w.webp');
+            background-image: url('https://images.ctfassets.net/kqstdfjhkjd5/4Z6L8JdG6QaJ4RC2a6cxhc/254fbc2c84fad3f125c3f4dbebc57d82/Carasso_Photos_02_2024-7400901__ID_626393_.jpg');
+            background-position: center;
           }
           .urban-renew-bottomtext1 {
             display: flex;
@@ -790,21 +800,21 @@ svg.active .svg-elem-1 {
             flex-shrink: 0;
             justify-content: flex-end;
           }
-          .urban-renew-frame2801 {
+          .urban-renew-frame2791 {
             gap: 16px;
             display: flex;
             align-items: flex-end;
             flex-direction: column;
           }
-          .urban-renew-text17 {
+          .urban-renew-text18 {
             color: var(--dl-color-carasso-primaryblack);
             height: auto;
             font-size: 24px;
             font-style: Medium;
             text-align: right;
-            font-family: Ploni ML v2 AAA;
+            font-family: 'Ploni ML v2 AAA';
             font-weight: 500;
-            line-height: 139.9999976158142%;
+            line-height: 140%;
             font-stretch: normal;
             text-decoration: none;
           }
@@ -814,9 +824,9 @@ svg.active .svg-elem-1 {
             font-size: 16px;
             font-style: Light;
             text-align: right;
-            font-family: Ploni ML v2 AAA;
+            font-family: 'Ploni ML v2 AAA';
             font-weight: 300;
-            line-height: 139.9999976158142%;
+            line-height: 140%;
             font-stretch: normal;
             text-decoration: none;
           }
@@ -845,7 +855,8 @@ svg.active .svg-elem-1 {
             align-items: flex-start;
             flex-direction: column;
             background-size: cover;
-            background-image: url('/external/top-image-400h-1500w.webp');
+            background-image: url('https://images.ctfassets.net/kqstdfjhkjd5/1qsLrdRY0DjzrUZMOHXLHU/fd9aebc888f8a1a87c242847443ee7a0/Asaf_toledano_-_A7407316.jpg');
+            background-position: center;
           }
           .urban-renew-bottomtext2 {
             display: flex;
@@ -856,33 +867,33 @@ svg.active .svg-elem-1 {
             flex-shrink: 0;
             justify-content: flex-end;
           }
-          .urban-renew-frame279 {
+          .urban-renew-frame280 {
             gap: 16px;
             display: flex;
             align-items: flex-end;
             flex-direction: column;
           }
-          .urban-renew-text21 {
+          .urban-renew-text20 {
             color: var(--dl-color-carasso-primaryblack);
             height: auto;
             font-size: 24px;
             font-style: Medium;
             text-align: right;
-            font-family: Ploni ML v2 AAA;
+            font-family: 'Ploni ML v2 AAA';
             font-weight: 500;
-            line-height: 139.9999976158142%;
+            line-height: 140%;
             font-stretch: normal;
             text-decoration: none;
           }
-          .urban-renew-text23 {
+          .urban-renew-text21 {
             color: var(--dl-color-carasso-primaryblack);
             height: auto;
             font-size: 16px;
             font-style: Light;
             text-align: right;
-            font-family: Ploni ML v2 AAA;
+            font-family: 'Ploni ML v2 AAA';
             font-weight: 300;
-            line-height: 139.9999976158142%;
+            line-height: 140%;
             font-stretch: normal;
             text-decoration: none;
           }
@@ -908,10 +919,11 @@ svg.active .svg-elem-1 {
             overflow: hidden;
             flex-grow: 1;
             align-self: stretch;
-            align-items: flex-start;
             flex-direction: column;
             background-size: cover;
-            background-image: url('/external/top-image%20(1)1-400h-1500w.webp');
+            justify-content: flex-start;
+            background-image: url('https://images.ctfassets.net/kqstdfjhkjd5/6iEEeKe9OhHvC5nNvJW5nl/9e82f8b2ddc96425bcd92e35e4f015cc/Carasso_Photos_02_2024-7401086__ID_626395_.jpg');
+            background-position: center;
           }
           .urban-renew-bottomtext3 {
             display: flex;
@@ -922,21 +934,155 @@ svg.active .svg-elem-1 {
             flex-shrink: 0;
             justify-content: flex-end;
           }
-          .urban-renew-frame2791 {
+          .urban-renew-frame2801 {
             gap: 16px;
             display: flex;
             align-items: flex-end;
             flex-direction: column;
           }
-          .urban-renew-text25 {
+          .urban-renew-text22 {
             color: var(--dl-color-carasso-primaryblack);
             height: auto;
             font-size: 24px;
             font-style: Medium;
             text-align: right;
-            font-family: Ploni ML v2 AAA;
+            font-family: 'Ploni ML v2 AAA';
             font-weight: 500;
-            line-height: 139.9999976158142%;
+            line-height: 140%;
+            font-stretch: normal;
+            text-decoration: none;
+          }
+          .urban-renew-text23 {
+            color: var(--dl-color-carasso-primaryblack);
+            height: auto;
+            font-size: 16px;
+            font-style: Light;
+            text-align: right;
+            font-family: 'Ploni ML v2 AAA';
+            font-weight: 300;
+            line-height: 140%;
+            font-stretch: normal;
+            text-decoration: none;
+          }
+          .urban-renew-memberblock4 {
+            width: 300px;
+            display: flex;
+            overflow: hidden;
+            flex-grow: 1;
+            align-items: flex-start;
+            flex-shrink: 0;
+            border-color: rgba(166, 196, 177, 1);
+            border-style: solid;
+            border-width: 0.5px;
+            border-radius: 20px;
+            flex-direction: column;
+            background-color: var(--dl-color-carasso-backgroundcolor);
+          }
+          .urban-renew-topimage4 {
+            gap: 10px;
+            height: 347px;
+            display: flex;
+            padding: 10px;
+            overflow: hidden;
+            flex-grow: 1;
+            align-self: stretch;
+            flex-direction: column;
+            background-size: cover;
+            justify-content: flex-start;
+            background-image: url('https://images.ctfassets.net/kqstdfjhkjd5/12XqX0Fr1TGwMew9siYieV/641b61e9374aee9070feeaa425950964/Boaz_shikler_-A7407160.jpg');
+            background-position: center;
+          }
+          .urban-renew-bottomtext4 {
+            display: flex;
+            padding: 22px 24px 20px;
+            overflow: hidden;
+            align-self: stretch;
+            align-items: flex-start;
+            flex-shrink: 0;
+            justify-content: flex-end;
+          }
+          .urban-renew-frame2802 {
+            gap: 16px;
+            display: flex;
+            align-items: flex-end;
+            flex-direction: column;
+          }
+          .urban-renew-text24 {
+            color: var(--dl-color-carasso-primaryblack);
+            height: auto;
+            font-size: 24px;
+            font-style: Medium;
+            text-align: right;
+            font-family: 'Ploni ML v2 AAA';
+            font-weight: 500;
+            line-height: 140%;
+            font-stretch: normal;
+            text-decoration: none;
+          }
+          .urban-renew-text25 {
+            color: var(--dl-color-carasso-primaryblack);
+            height: auto;
+            font-size: 16px;
+            font-style: Light;
+            text-align: right;
+            font-family: 'Ploni ML v2 AAA';
+            font-weight: 300;
+            line-height: 140%;
+            font-stretch: normal;
+            text-decoration: none;
+          }
+          .urban-renew-memberblock5 {
+            width: 300px;
+            display: flex;
+            overflow: hidden;
+            flex-grow: 1;
+            align-items: flex-start;
+            flex-shrink: 0;
+            border-color: rgba(166, 196, 177, 1);
+            border-style: solid;
+            border-width: 0.5px;
+            border-radius: 20px;
+            flex-direction: column;
+            background-color: var(--dl-color-carasso-backgroundcolor);
+          }
+          .urban-renew-topimage5 {
+            gap: 10px;
+            height: 347px;
+            display: flex;
+            padding: 10px;
+            overflow: hidden;
+            flex-grow: 1;
+            align-self: stretch;
+            flex-direction: column;
+            background-size: cover;
+            justify-content: flex-start;
+            background-image: url('https://images.ctfassets.net/kqstdfjhkjd5/6iEEeKe9OhHvC5nNvJW5nl/9e82f8b2ddc96425bcd92e35e4f015cc/Carasso_Photos_02_2024-7401086__ID_626395_.jpg');
+            background-position: center;
+          }
+          .urban-renew-bottomtext5 {
+            display: flex;
+            padding: 22px 24px 20px;
+            overflow: hidden;
+            align-self: stretch;
+            align-items: flex-start;
+            flex-shrink: 0;
+            justify-content: flex-end;
+          }
+          .urban-renew-frame2803 {
+            gap: 16px;
+            display: flex;
+            align-items: flex-end;
+            flex-direction: column;
+          }
+          .urban-renew-text26 {
+            color: var(--dl-color-carasso-primaryblack);
+            height: auto;
+            font-size: 24px;
+            font-style: Medium;
+            text-align: right;
+            font-family: 'Ploni ML v2 AAA';
+            font-weight: 500;
+            line-height: 140%;
             font-stretch: normal;
             text-decoration: none;
           }
@@ -946,9 +1092,9 @@ svg.active .svg-elem-1 {
             font-size: 16px;
             font-style: Light;
             text-align: right;
-            font-family: Ploni ML v2 AAA;
+            font-family: 'Ploni ML v2 AAA';
             font-weight: 300;
-            line-height: 139.9999976158142%;
+            line-height: 140%;
             font-stretch: normal;
             text-decoration: none;
           }
@@ -967,7 +1113,7 @@ svg.active .svg-elem-1 {
             flex-direction: column;
             justify-content: center;
           }
-          .urban-renew-text29 {
+          .urban-renew-text28 {
             color: var(--dl-color-carasso-primaryblack);
             height: auto;
             font-size: 32px;
@@ -979,7 +1125,7 @@ svg.active .svg-elem-1 {
             font-stretch: normal;
             text-decoration: none;
           }
-          .urban-renew-text31 {
+          .urban-renew-text30 {
             color: var(--dl-color-carasso-primaryblack);
             height: auto;
             font-size: 18px;
@@ -1052,7 +1198,7 @@ svg.active .svg-elem-1 {
             position: absolute;
             object-fit: cover;
           }
-          .urban-renew-text33 {
+          .urban-renew-text32 {
             color: rgb(20, 103, 50);
             height: auto;
             z-index: 100;
@@ -1064,9 +1210,6 @@ svg.active .svg-elem-1 {
             line-height: 110%;
             font-stretch: normal;
             text-decoration: none;
-          }
-          .urban-renew-text34 {
-            font-weight: 300;
           }
           .urban-renew-steps {
             gap: 30px;
@@ -1097,7 +1240,7 @@ svg.active .svg-elem-1 {
             align-items: flex-end;
             flex-direction: column;
           }
-          .urban-renew-text36 {
+          .urban-renew-text35 {
             color: rgba(19, 103, 49, 1);
             height: auto;
             font-size: 18px;
@@ -1109,7 +1252,7 @@ svg.active .svg-elem-1 {
             font-stretch: normal;
             text-decoration: none;
           }
-          .urban-renew-text38 {
+          .urban-renew-text37 {
             color: rgb(19, 103, 49);
             width: 100%;
             height: auto;
@@ -1122,7 +1265,7 @@ svg.active .svg-elem-1 {
             font-stretch: normal;
             text-decoration: none;
           }
-          .urban-renew-text42 {
+          .urban-renew-text41 {
             color: rgba(19, 103, 49, 1);
             height: auto;
             font-size: 80px;
@@ -1154,7 +1297,7 @@ svg.active .svg-elem-1 {
             align-items: flex-end;
             flex-direction: column;
           }
-          .urban-renew-text43 {
+          .urban-renew-text42 {
             color: rgba(19, 103, 49, 1);
             height: auto;
             font-size: 18px;
@@ -1166,7 +1309,7 @@ svg.active .svg-elem-1 {
             font-stretch: normal;
             text-decoration: none;
           }
-          .urban-renew-text45 {
+          .urban-renew-text44 {
             color: rgb(19, 103, 49);
             width: 100%;
             height: auto;
@@ -1179,7 +1322,7 @@ svg.active .svg-elem-1 {
             font-stretch: normal;
             text-decoration: none;
           }
-          .urban-renew-text51 {
+          .urban-renew-text50 {
             color: rgba(19, 103, 49, 1);
             height: auto;
             font-size: 80px;
@@ -1212,7 +1355,7 @@ svg.active .svg-elem-1 {
             align-items: flex-end;
             flex-direction: column;
           }
-          .urban-renew-text52 {
+          .urban-renew-text51 {
             color: rgba(19, 103, 49, 1);
             height: auto;
             font-size: 18px;
@@ -1224,7 +1367,7 @@ svg.active .svg-elem-1 {
             font-stretch: normal;
             text-decoration: none;
           }
-          .urban-renew-text54 {
+          .urban-renew-text53 {
             color: rgb(19, 103, 49);
             width: 100%;
             height: auto;
@@ -1237,7 +1380,7 @@ svg.active .svg-elem-1 {
             font-stretch: normal;
             text-decoration: none;
           }
-          .urban-renew-text60 {
+          .urban-renew-text59 {
             color: rgba(19, 103, 49, 1);
             height: auto;
             font-size: 80px;
@@ -1270,7 +1413,7 @@ svg.active .svg-elem-1 {
             align-items: flex-end;
             flex-direction: column;
           }
-          .urban-renew-text61 {
+          .urban-renew-text60 {
             color: rgba(19, 103, 49, 1);
             height: auto;
             font-size: 18px;
@@ -1282,7 +1425,7 @@ svg.active .svg-elem-1 {
             font-stretch: normal;
             text-decoration: none;
           }
-          .urban-renew-text63 {
+          .urban-renew-text62 {
             color: rgb(19, 103, 49);
             width: 100%;
             height: auto;
@@ -1295,7 +1438,7 @@ svg.active .svg-elem-1 {
             font-stretch: normal;
             text-decoration: none;
           }
-          .urban-renew-text67 {
+          .urban-renew-text66 {
             color: rgba(19, 103, 49, 1);
             height: auto;
             font-size: 80px;
@@ -1328,7 +1471,7 @@ svg.active .svg-elem-1 {
             align-items: flex-end;
             flex-direction: column;
           }
-          .urban-renew-text68 {
+          .urban-renew-text67 {
             color: rgba(19, 103, 49, 1);
             height: auto;
             font-size: 18px;
@@ -1340,7 +1483,7 @@ svg.active .svg-elem-1 {
             font-stretch: normal;
             text-decoration: none;
           }
-          .urban-renew-text70 {
+          .urban-renew-text69 {
             color: rgb(19, 103, 49);
             width: 100%;
             height: auto;
@@ -1353,7 +1496,7 @@ svg.active .svg-elem-1 {
             font-stretch: normal;
             text-decoration: none;
           }
-          .urban-renew-text74 {
+          .urban-renew-text73 {
             color: rgba(19, 103, 49, 1);
             height: auto;
             font-size: 80px;
@@ -1386,7 +1529,7 @@ svg.active .svg-elem-1 {
             align-items: flex-end;
             flex-direction: column;
           }
-          .urban-renew-text75 {
+          .urban-renew-text74 {
             color: rgba(19, 103, 49, 1);
             height: auto;
             font-size: 18px;
@@ -1398,7 +1541,7 @@ svg.active .svg-elem-1 {
             font-stretch: normal;
             text-decoration: none;
           }
-          .urban-renew-text77 {
+          .urban-renew-text76 {
             color: rgb(19, 103, 49);
             width: 100%;
             height: auto;
@@ -1411,7 +1554,7 @@ svg.active .svg-elem-1 {
             font-stretch: normal;
             text-decoration: none;
           }
-          .urban-renew-text81 {
+          .urban-renew-text80 {
             color: rgba(19, 103, 49, 1);
             height: auto;
             font-size: 80px;
@@ -1444,7 +1587,7 @@ svg.active .svg-elem-1 {
             align-items: flex-end;
             flex-direction: column;
           }
-          .urban-renew-text82 {
+          .urban-renew-text81 {
             color: rgba(19, 103, 49, 1);
             height: auto;
             font-size: 18px;
@@ -1456,7 +1599,7 @@ svg.active .svg-elem-1 {
             font-stretch: normal;
             text-decoration: none;
           }
-          .urban-renew-text84 {
+          .urban-renew-text83 {
             color: rgba(19, 103, 49, 1);
             height: auto;
             font-size: 16px;
@@ -1468,7 +1611,7 @@ svg.active .svg-elem-1 {
             font-stretch: normal;
             text-decoration: none;
           }
-          .urban-renew-text86 {
+          .urban-renew-text85 {
             color: rgba(19, 103, 49, 1);
             height: auto;
             font-size: 80px;
@@ -1533,6 +1676,9 @@ svg.active .svg-elem-1 {
               padding-left: var(--dl-space-space-sixunits);
               padding-right: var(--dl-space-space-sixunits);
             }
+            .urban-renew-content1 {
+              flex-direction: column;
+            }
             .urban-renew-text10 {
               color: rgb(0, 177, 64);
               font-size: 50px;
@@ -1545,13 +1691,16 @@ svg.active .svg-elem-1 {
               font-weight: 300;
             }
             .urban-renew-text12 {
+              font-weight: 300;
+            }
+            .urban-renew-text13 {
               font-weight: 700;
             }
             .urban-renew-team {
               display: grid;
               align-self: center;
               flex-direction: column;
-              grid-template-columns: repeat(2, 1fr);
+              grid-template-columns: repeat(3, 1fr);
             }
           }
           @media (max-width: 991px) {
@@ -1600,6 +1749,85 @@ svg.active .svg-elem-1 {
               padding-left: 0px;
               padding-right: 0px;
             }
+            .urban-renew-text10 {
+              color: rgb(0, 177, 64);
+              font-size: 50px;
+              font-family: Ploni ML v2 AAA;
+              font-weight: 300;
+              line-height: 110%;
+              text-decoration: none;
+            }
+            .urban-renew-text11 {
+              font-family: Ploni ML v2 AAA Light;
+              font-weight: 300;
+            }
+            .urban-renew-text12 {
+              font-weight: 300;
+            }
+            .urban-renew-text13 {
+              font-family: Ploni ML v2 AAA Bold;
+              font-weight: 700;
+            }
+            .urban-renew-frame279 {
+              width: 100%;
+              align-items: flex-start;
+              flex-direction: column;
+            }
+            .urban-renew-frame2791 {
+              width: 100%;
+              align-items: flex-start;
+            }
+            .urban-renew-frame280 {
+              width: 100%;
+              align-items: flex-start;
+            }
+            .urban-renew-frame2801 {
+              width: 100%;
+              align-items: flex-start;
+            }
+            .urban-renew-topimage4 {
+              background-image: url('https://images.ctfassets.net/kqstdfjhkjd5/12XqX0Fr1TGwMew9siYieV/641b61e9374aee9070feeaa425950964/Boaz_shikler_-A7407160.jpg');
+            }
+            .urban-renew-frame2802 {
+              width: 100%;
+              align-items: flex-start;
+            }
+            .urban-renew-text24 {
+              color: var(--dl-color-carasso-primaryblack);
+              font-size: 24px;
+              font-family: Ploni ML v2 AAA;
+              font-weight: 500;
+              line-height: 140%;
+              text-decoration: none;
+            }
+            .urban-renew-text25 {
+              color: var(--dl-color-carasso-primaryblack);
+              font-size: 16px;
+              font-family: Ploni ML v2 AAA;
+              font-weight: 300;
+              line-height: 140%;
+              text-decoration: none;
+            }
+            .urban-renew-frame2803 {
+              width: 100%;
+              align-items: flex-start;
+            }
+            .urban-renew-text26 {
+              color: var(--dl-color-carasso-primaryblack);
+              font-size: 24px;
+              font-family: Ploni ML v2 AAA;
+              font-weight: 500;
+              line-height: 140%;
+              text-decoration: none;
+            }
+            .urban-renew-text27 {
+              color: var(--dl-color-carasso-primaryblack);
+              font-size: 16px;
+              font-family: Ploni ML v2 AAA;
+              font-weight: 300;
+              line-height: 140%;
+              text-decoration: none;
+            }
             .urban-renew-container04 {
               padding-left: 30px;
               padding-right: 30px;
@@ -1607,6 +1835,17 @@ svg.active .svg-elem-1 {
             .urban-renew-image3 {
               right: 0px;
               bottom: 0px;
+            }
+            .urban-renew-text32 {
+              color: rgb(20, 103, 50);
+              font-size: 50px;
+              font-family: Ploni ML v2 AAA;
+              font-weight: 300;
+              line-height: 110%;
+              text-decoration: none;
+            }
+            .urban-renew-text33 {
+              font-weight: 300;
             }
             .urban-renew-steps {
               width: auto;
@@ -1674,12 +1913,6 @@ svg.active .svg-elem-1 {
             .urban-renew-memberblock {
               width: 100%;
             }
-            .urban-renew-topimage {
-              width: auto;
-            }
-            .urban-renew-bottomtext {
-              width: 100%;
-            }
             .urban-renew-memberblock1 {
               width: 100%;
             }
@@ -1687,6 +1920,30 @@ svg.active .svg-elem-1 {
               width: 100%;
             }
             .urban-renew-memberblock3 {
+              width: 100%;
+            }
+            .urban-renew-topimage3 {
+              width: auto;
+            }
+            .urban-renew-bottomtext3 {
+              width: 100%;
+            }
+            .urban-renew-memberblock4 {
+              width: 100%;
+            }
+            .urban-renew-topimage4 {
+              width: auto;
+            }
+            .urban-renew-bottomtext4 {
+              width: 100%;
+            }
+            .urban-renew-memberblock5 {
+              width: 100%;
+            }
+            .urban-renew-topimage5 {
+              width: auto;
+            }
+            .urban-renew-bottomtext5 {
               width: 100%;
             }
             .urban-renew-steps {
@@ -1727,10 +1984,10 @@ svg.active .svg-elem-1 {
               padding-bottom: 0px;
             }
             .urban-renew-team {
-              padding-left: var(--dl-space-space-threeunits);
-              padding-right: var(--dl-space-space-threeunits);
+              padding-left: var(--dl-space-space-unit);
+              padding-right: var(--dl-space-space-unit);
             }
-            .urban-renew-text31 {
+            .urban-renew-text30 {
               text-align: center;
             }
             .urban-renew-image3 {

@@ -4,8 +4,8 @@ import Head from 'next/head'
 import { DataProvider, Repeater } from '@teleporthq/react-components'
 import PropTypes from 'prop-types'
 
-import staffPageInitialPropsTqY5Resource from '../../../resources/staff-page-initial-props-tq_y5'
-import staffPageInitialPathsTqWjResource from '../../../resources/staff-page-initial-paths-tq_wj'
+import staffPageInitialPropsTq5sResource from '../../../resources/staff-page-initial-props-tq_5s'
+import staffPageInitialPathsTqQbResource from '../../../resources/staff-page-initial-paths-tq_qb'
 
 const Staff11 = (props) => {
   return (
@@ -79,7 +79,7 @@ export default Staff11
 
 export async function getStaticProps(context) {
   try {
-    const response = await staffPageInitialPropsTqY5Resource({
+    const response = await staffPageInitialPropsTq5sResource({
       ...context?.params,
       skip: (context.params.page - 1) * 10,
     })
@@ -104,7 +104,7 @@ export async function getStaticProps(context) {
 
 export async function getStaticPaths() {
   try {
-    const response = await staffPageInitialPathsTqWjResource({
+    const response = await staffPageInitialPathsTqQbResource({
       content_type: 'staff',
     })
     const totalCount = response?.meta?.pagination?.total

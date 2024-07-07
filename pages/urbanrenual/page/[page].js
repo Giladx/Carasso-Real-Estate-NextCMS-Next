@@ -4,8 +4,8 @@ import Head from 'next/head'
 import { DataProvider, Repeater } from '@teleporthq/react-components'
 import PropTypes from 'prop-types'
 
-import urbanrenualPageInitialPropsTqBaResource from '../../../resources/urbanrenual-page-initial-props-tq_ba'
-import urbanrenualPageInitialPathsTqOEResource from '../../../resources/urbanrenual-page-initial-paths-tq_o-e'
+import urbanrenualPageInitialPropsTqF4Resource from '../../../resources/urbanrenual-page-initial-props-tq_f4'
+import urbanrenualPageInitialPathsTq9aResource from '../../../resources/urbanrenual-page-initial-paths-tq_9a'
 
 const Urbanrenual1 = (props) => {
   return (
@@ -80,7 +80,7 @@ export default Urbanrenual1
 
 export async function getStaticProps(context) {
   try {
-    const response = await urbanrenualPageInitialPropsTqBaResource({
+    const response = await urbanrenualPageInitialPropsTqF4Resource({
       ...context?.params,
       skip: (context.params.page - 1) * 10,
     })
@@ -105,7 +105,7 @@ export async function getStaticProps(context) {
 
 export async function getStaticPaths() {
   try {
-    const response = await urbanrenualPageInitialPathsTqOEResource({
+    const response = await urbanrenualPageInitialPathsTq9aResource({
       content_type: 'urbanRenual',
     })
     const totalCount = response?.meta?.pagination?.total

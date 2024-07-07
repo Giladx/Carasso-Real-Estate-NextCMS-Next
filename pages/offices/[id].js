@@ -4,8 +4,8 @@ import Head from 'next/head'
 import { DataProvider, Repeater } from '@teleporthq/react-components'
 import PropTypes from 'prop-types'
 
-import officesPageInitialPropsTqWRResource from '../../resources/offices-page-initial-props-tq_w-r'
-import officesPageInitialPathsTqBResource from '../../resources/offices-page-initial-paths-tq_-b'
+import officesPageInitialPropsTqTqResource from '../../resources/offices-page-initial-props-tq_tq'
+import officesPageInitialPathsTqE6Resource from '../../resources/offices-page-initial-paths-tq_e6'
 
 const Offices11 = (props) => {
   return (
@@ -65,7 +65,7 @@ export default Offices11
 
 export async function getStaticProps(context) {
   try {
-    const response = await officesPageInitialPropsTqWRResource({
+    const response = await officesPageInitialPropsTqTqResource({
       ...context?.params,
     })
     if (!response?.data?.[0]) {
@@ -89,7 +89,7 @@ export async function getStaticProps(context) {
 
 export async function getStaticPaths() {
   try {
-    const response = await officesPageInitialPathsTqBResource({
+    const response = await officesPageInitialPathsTqE6Resource({
       content_type: 'offices',
       select: 'sys.id',
     })

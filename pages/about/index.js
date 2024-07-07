@@ -4,7 +4,7 @@ import Head from 'next/head'
 import { DataProvider, Repeater } from '@teleporthq/react-components'
 import PropTypes from 'prop-types'
 
-import aboutPageInitialPropsTqI8Resource from '../../resources/about-page-initial-props-tq_i8'
+import aboutPageInitialPropsTq8mResource from '../../resources/about-page-initial-props-tq_8m'
 
 const About2 = (props) => {
   return (
@@ -76,7 +76,7 @@ export default About2
 
 export async function getStaticProps(context) {
   try {
-    const response = await aboutPageInitialPropsTqI8Resource({
+    const response = await aboutPageInitialPropsTq8mResource({
       ...context?.params,
     })
     if (!response) {

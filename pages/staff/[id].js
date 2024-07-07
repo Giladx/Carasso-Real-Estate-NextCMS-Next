@@ -4,8 +4,8 @@ import Head from 'next/head'
 import { DataProvider, Repeater } from '@teleporthq/react-components'
 import PropTypes from 'prop-types'
 
-import staffPageInitialPropsTqXvResource from '../../resources/staff-page-initial-props-tq_xv'
-import staffPageInitialPathsTqUdResource from '../../resources/staff-page-initial-paths-tq_ud'
+import staffPageInitialPropsTqDiResource from '../../resources/staff-page-initial-props-tq_di'
+import staffPageInitialPathsTqNvResource from '../../resources/staff-page-initial-paths-tq_nv'
 
 const Staff = (props) => {
   return (
@@ -65,7 +65,7 @@ export default Staff
 
 export async function getStaticProps(context) {
   try {
-    const response = await staffPageInitialPropsTqXvResource({
+    const response = await staffPageInitialPropsTqDiResource({
       ...context?.params,
     })
     if (!response?.data?.[0]) {
@@ -89,7 +89,7 @@ export async function getStaticProps(context) {
 
 export async function getStaticPaths() {
   try {
-    const response = await staffPageInitialPathsTqUdResource({
+    const response = await staffPageInitialPathsTqNvResource({
       content_type: 'staff',
       select: 'sys.id',
     })

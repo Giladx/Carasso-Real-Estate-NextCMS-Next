@@ -4,7 +4,7 @@ import Head from 'next/head'
 import { DataProvider, Repeater } from '@teleporthq/react-components'
 import PropTypes from 'prop-types'
 
-import successstoriesPageInitialPropsTqYHResource from '../../resources/successstories-page-initial-props-tq_y-h'
+import successstoriesPageInitialPropsTqZmResource from '../../resources/successstories-page-initial-props-tq_zm'
 
 const Successstories1 = (props) => {
   return (
@@ -81,7 +81,7 @@ export default Successstories1
 
 export async function getStaticProps(context) {
   try {
-    const response = await successstoriesPageInitialPropsTqYHResource({
+    const response = await successstoriesPageInitialPropsTqZmResource({
       ...context?.params,
     })
     if (!response) {

@@ -4,8 +4,8 @@ import Head from 'next/head'
 import { DataProvider, Repeater } from '@teleporthq/react-components'
 import PropTypes from 'prop-types'
 
-import officesPageInitialPropsTqWjResource from '../../../resources/offices-page-initial-props-tq_wj'
-import officesPageInitialPathsTqZqResource from '../../../resources/offices-page-initial-paths-tq_zq'
+import officesPageInitialPropsTqTmResource from '../../../resources/offices-page-initial-props-tq_tm'
+import officesPageInitialPathsTqKResource from '../../../resources/offices-page-initial-paths-tq_k_'
 
 const Offices1 = (props) => {
   return (
@@ -79,7 +79,7 @@ export default Offices1
 
 export async function getStaticProps(context) {
   try {
-    const response = await officesPageInitialPropsTqWjResource({
+    const response = await officesPageInitialPropsTqTmResource({
       ...context?.params,
       skip: (context.params.page - 1) * 10,
     })
@@ -104,7 +104,7 @@ export async function getStaticProps(context) {
 
 export async function getStaticPaths() {
   try {
-    const response = await officesPageInitialPathsTqZqResource({
+    const response = await officesPageInitialPathsTqKResource({
       content_type: 'offices',
     })
     const totalCount = response?.meta?.pagination?.total

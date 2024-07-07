@@ -4,8 +4,8 @@ import Head from 'next/head'
 import { DataProvider, Repeater } from '@teleporthq/react-components'
 import PropTypes from 'prop-types'
 
-import shoppingCentersPageInitialPropsTqA7Resource from '../../../resources/shopping-centers-page-initial-props-tq_a7'
-import shoppingCentersPageInitialPathsTqXjResource from '../../../resources/shopping-centers-page-initial-paths-tq_xj'
+import shoppingCentersPageInitialPropsTqX0Resource from '../../../resources/shopping-centers-page-initial-props-tq_x0'
+import shoppingCentersPageInitialPathsTqHIResource from '../../../resources/shopping-centers-page-initial-paths-tq_h-i'
 
 const ShoppingCenters11 = (props) => {
   return (
@@ -82,7 +82,7 @@ export default ShoppingCenters11
 
 export async function getStaticProps(context) {
   try {
-    const response = await shoppingCentersPageInitialPropsTqA7Resource({
+    const response = await shoppingCentersPageInitialPropsTqX0Resource({
       ...context?.params,
       skip: (context.params.page - 1) * 10,
     })
@@ -107,7 +107,7 @@ export async function getStaticProps(context) {
 
 export async function getStaticPaths() {
   try {
-    const response = await shoppingCentersPageInitialPathsTqXjResource({
+    const response = await shoppingCentersPageInitialPathsTqHIResource({
       content_type: 'shoppingCenters',
     })
     const totalCount = response?.meta?.pagination?.total

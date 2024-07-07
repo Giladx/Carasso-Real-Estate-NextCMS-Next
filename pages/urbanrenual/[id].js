@@ -4,8 +4,8 @@ import Head from 'next/head'
 import { DataProvider, Repeater } from '@teleporthq/react-components'
 import PropTypes from 'prop-types'
 
-import urbanrenualPageInitialPropsTqB6Resource from '../../resources/urbanrenual-page-initial-props-tq_b6'
-import urbanrenualPageInitialPathsTqOMResource from '../../resources/urbanrenual-page-initial-paths-tq_o-m'
+import urbanrenualPageInitialPropsTqAiResource from '../../resources/urbanrenual-page-initial-props-tq_ai'
+import urbanrenualPageInitialPathsTqN1Resource from '../../resources/urbanrenual-page-initial-paths-tq_n1'
 
 const Urbanrenual11 = (props) => {
   return (
@@ -66,7 +66,7 @@ export default Urbanrenual11
 
 export async function getStaticProps(context) {
   try {
-    const response = await urbanrenualPageInitialPropsTqB6Resource({
+    const response = await urbanrenualPageInitialPropsTqAiResource({
       ...context?.params,
     })
     if (!response?.data?.[0]) {
@@ -90,7 +90,7 @@ export async function getStaticProps(context) {
 
 export async function getStaticPaths() {
   try {
-    const response = await urbanrenualPageInitialPathsTqOMResource({
+    const response = await urbanrenualPageInitialPathsTqN1Resource({
       content_type: 'urbanRenual',
       select: 'sys.id',
     })

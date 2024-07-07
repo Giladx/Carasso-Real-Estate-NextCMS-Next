@@ -4,8 +4,8 @@ import Head from 'next/head'
 import { DataProvider, Repeater } from '@teleporthq/react-components'
 import PropTypes from 'prop-types'
 
-import aboutPageInitialPropsTqTnResource from '../../../resources/about-page-initial-props-tq_tn'
-import aboutPageInitialPathsTqSiResource from '../../../resources/about-page-initial-paths-tq_si'
+import aboutPageInitialPropsTqCResource from '../../../resources/about-page-initial-props-tq__c'
+import aboutPageInitialPathsTqV9Resource from '../../../resources/about-page-initial-paths-tq_v9'
 
 const About21 = (props) => {
   return (
@@ -77,7 +77,7 @@ export default About21
 
 export async function getStaticProps(context) {
   try {
-    const response = await aboutPageInitialPropsTqTnResource({
+    const response = await aboutPageInitialPropsTqCResource({
       ...context?.params,
       skip: (context.params.page - 1) * 10,
     })
@@ -102,7 +102,7 @@ export async function getStaticProps(context) {
 
 export async function getStaticPaths() {
   try {
-    const response = await aboutPageInitialPathsTqSiResource({
+    const response = await aboutPageInitialPathsTqV9Resource({
       content_type: 'about',
     })
     const totalCount = response?.meta?.pagination?.total

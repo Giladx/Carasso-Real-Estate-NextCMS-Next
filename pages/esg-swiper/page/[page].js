@@ -4,8 +4,8 @@ import Head from 'next/head'
 import { DataProvider, Repeater } from '@teleporthq/react-components'
 import PropTypes from 'prop-types'
 
-import esgSwiperPageInitialPropsTqU6Resource from '../../../resources/esg-swiper-page-initial-props-tq_u6'
-import esgSwiperPageInitialPathsTqEjResource from '../../../resources/esg-swiper-page-initial-paths-tq_ej'
+import esgSwiperPageInitialPropsTq3wResource from '../../../resources/esg-swiper-page-initial-props-tq_3w'
+import esgSwiperPageInitialPathsTqPGResource from '../../../resources/esg-swiper-page-initial-paths-tq_p-g'
 
 const ESGSwiper11 = (props) => {
   return (
@@ -81,7 +81,7 @@ export default ESGSwiper11
 
 export async function getStaticProps(context) {
   try {
-    const response = await esgSwiperPageInitialPropsTqU6Resource({
+    const response = await esgSwiperPageInitialPropsTq3wResource({
       ...context?.params,
       skip: (context.params.page - 1) * 10,
     })
@@ -106,7 +106,7 @@ export async function getStaticProps(context) {
 
 export async function getStaticPaths() {
   try {
-    const response = await esgSwiperPageInitialPathsTqEjResource({
+    const response = await esgSwiperPageInitialPathsTqPGResource({
       content_type: 'esgSwiper',
     })
     const totalCount = response?.meta?.pagination?.total

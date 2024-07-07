@@ -4,8 +4,8 @@ import Head from 'next/head'
 import { DataProvider, Repeater } from '@teleporthq/react-components'
 import PropTypes from 'prop-types'
 
-import successstoriesPageInitialPropsTqYLResource from '../../../resources/successstories-page-initial-props-tq_y-l'
-import successstoriesPageInitialPathsTqR5Resource from '../../../resources/successstories-page-initial-paths-tq_r5'
+import successstoriesPageInitialPropsTqKmResource from '../../../resources/successstories-page-initial-props-tq_km'
+import successstoriesPageInitialPathsTqLzResource from '../../../resources/successstories-page-initial-paths-tq_lz'
 
 const Successstories11 = (props) => {
   return (
@@ -82,7 +82,7 @@ export default Successstories11
 
 export async function getStaticProps(context) {
   try {
-    const response = await successstoriesPageInitialPropsTqYLResource({
+    const response = await successstoriesPageInitialPropsTqKmResource({
       ...context?.params,
       skip: (context.params.page - 1) * 10,
     })
@@ -107,7 +107,7 @@ export async function getStaticProps(context) {
 
 export async function getStaticPaths() {
   try {
-    const response = await successstoriesPageInitialPathsTqR5Resource({
+    const response = await successstoriesPageInitialPathsTqLzResource({
       content_type: 'successStories',
     })
     const totalCount = response?.meta?.pagination?.total
