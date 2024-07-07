@@ -4,8 +4,8 @@ import Head from 'next/head'
 import { DataProvider, Repeater } from '@teleporthq/react-components'
 import PropTypes from 'prop-types'
 
-import tabDPageInitialPropsTqGuResource from '../../resources/tab_d-page-initial-props-tq_gu'
-import tabDPageInitialPathsTqQdResource from '../../resources/tab_d-page-initial-paths-tq_qd'
+import tabDPageInitialPropsTqYfResource from '../../resources/tab_d-page-initial-props-tq_yf'
+import tabDPageInitialPathsTqOBResource from '../../resources/tab_d-page-initial-paths-tq_o-b'
 
 const Tabd = (props) => {
   return (
@@ -65,7 +65,7 @@ export default Tabd
 
 export async function getStaticProps(context) {
   try {
-    const response = await tabDPageInitialPropsTqGuResource({
+    const response = await tabDPageInitialPropsTqYfResource({
       ...context?.params,
     })
     if (!response?.data?.[0]) {
@@ -89,7 +89,7 @@ export async function getStaticProps(context) {
 
 export async function getStaticPaths() {
   try {
-    const response = await tabDPageInitialPathsTqQdResource({
+    const response = await tabDPageInitialPathsTqOBResource({
       content_type: 'tabD',
       select: 'sys.id',
     })

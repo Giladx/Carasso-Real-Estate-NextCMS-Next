@@ -4,8 +4,8 @@ import Head from 'next/head'
 import { DataProvider, Repeater } from '@teleporthq/react-components'
 import PropTypes from 'prop-types'
 
-import buildingsPageInitialPropsTqHjResource from '../../resources/buildings-page-initial-props-tq_hj'
-import buildingsPageInitialPathsTq7zResource from '../../resources/buildings-page-initial-paths-tq_7z'
+import buildingsPageInitialPropsTqKeResource from '../../resources/buildings-page-initial-props-tq_ke'
+import buildingsPageInitialPathsTqAaResource from '../../resources/buildings-page-initial-paths-tq_aa'
 
 const Buildings11 = (props) => {
   return (
@@ -68,7 +68,7 @@ export default Buildings11
 
 export async function getStaticProps(context) {
   try {
-    const response = await buildingsPageInitialPropsTqHjResource({
+    const response = await buildingsPageInitialPropsTqKeResource({
       ...context?.params,
     })
     if (!response?.data?.[0]) {
@@ -92,7 +92,7 @@ export async function getStaticProps(context) {
 
 export async function getStaticPaths() {
   try {
-    const response = await buildingsPageInitialPathsTq7zResource({
+    const response = await buildingsPageInitialPathsTqAaResource({
       content_type: 'buildings',
       select: 'sys.id',
     })

@@ -4,8 +4,8 @@ import Head from 'next/head'
 import { DataProvider, Repeater } from '@teleporthq/react-components'
 import PropTypes from 'prop-types'
 
-import esgSwiperPageInitialPropsTq8oResource from '../../resources/esg-swiper-page-initial-props-tq_8o'
-import esgSwiperPageInitialPathsTq0uResource from '../../resources/esg-swiper-page-initial-paths-tq_0u'
+import esgSwiperPageInitialPropsTq2eResource from '../../resources/esg-swiper-page-initial-props-tq_2e'
+import esgSwiperPageInitialPathsTqSlResource from '../../resources/esg-swiper-page-initial-paths-tq_sl'
 
 const ESGSwiper = (props) => {
   return (
@@ -64,7 +64,7 @@ export default ESGSwiper
 
 export async function getStaticProps(context) {
   try {
-    const response = await esgSwiperPageInitialPropsTq8oResource({
+    const response = await esgSwiperPageInitialPropsTq2eResource({
       ...context?.params,
     })
     if (!response?.data?.[0]) {
@@ -88,7 +88,7 @@ export async function getStaticProps(context) {
 
 export async function getStaticPaths() {
   try {
-    const response = await esgSwiperPageInitialPathsTq0uResource({
+    const response = await esgSwiperPageInitialPathsTqSlResource({
       content_type: 'esgSwiper',
       select: 'sys.id',
     })

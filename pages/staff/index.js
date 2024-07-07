@@ -4,7 +4,7 @@ import Head from 'next/head'
 import { DataProvider, Repeater } from '@teleporthq/react-components'
 import PropTypes from 'prop-types'
 
-import staffPageInitialPropsTq90Resource from '../../resources/staff-page-initial-props-tq_90'
+import staffPageInitialPropsTqUYResource from '../../resources/staff-page-initial-props-tq_u-y'
 
 const Staff1 = (props) => {
   return (
@@ -78,7 +78,7 @@ export default Staff1
 
 export async function getStaticProps(context) {
   try {
-    const response = await staffPageInitialPropsTq90Resource({
+    const response = await staffPageInitialPropsTqUYResource({
       ...context?.params,
     })
     if (!response) {

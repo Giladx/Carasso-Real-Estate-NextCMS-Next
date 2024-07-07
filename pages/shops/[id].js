@@ -4,8 +4,8 @@ import Head from 'next/head'
 import { DataProvider, Repeater } from '@teleporthq/react-components'
 import PropTypes from 'prop-types'
 
-import shopsPageInitialPropsTqShResource from '../../resources/shops-page-initial-props-tq_sh'
-import shopsPageInitialPathsTqTfResource from '../../resources/shops-page-initial-paths-tq_tf'
+import shopsPageInitialPropsTqAbResource from '../../resources/shops-page-initial-props-tq_ab'
+import shopsPageInitialPathsTqMzResource from '../../resources/shops-page-initial-paths-tq_mz'
 
 const Shops11 = (props) => {
   return (
@@ -65,7 +65,7 @@ export default Shops11
 
 export async function getStaticProps(context) {
   try {
-    const response = await shopsPageInitialPropsTqShResource({
+    const response = await shopsPageInitialPropsTqAbResource({
       ...context?.params,
     })
     if (!response?.data?.[0]) {
@@ -89,7 +89,7 @@ export async function getStaticProps(context) {
 
 export async function getStaticPaths() {
   try {
-    const response = await shopsPageInitialPathsTqTfResource({
+    const response = await shopsPageInitialPathsTqMzResource({
       content_type: 'shops',
       select: 'sys.id',
     })

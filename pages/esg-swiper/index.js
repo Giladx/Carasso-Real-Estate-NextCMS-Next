@@ -4,7 +4,7 @@ import Head from 'next/head'
 import { DataProvider, Repeater } from '@teleporthq/react-components'
 import PropTypes from 'prop-types'
 
-import esgSwiperPageInitialPropsTqQaResource from '../../resources/esg-swiper-page-initial-props-tq_qa'
+import esgSwiperPageInitialPropsTq2Resource from '../../resources/esg-swiper-page-initial-props-tq_2-'
 
 const ESGSwiper1 = (props) => {
   return (
@@ -80,7 +80,7 @@ export default ESGSwiper1
 
 export async function getStaticProps(context) {
   try {
-    const response = await esgSwiperPageInitialPropsTqQaResource({
+    const response = await esgSwiperPageInitialPropsTq2Resource({
       ...context?.params,
     })
     if (!response) {

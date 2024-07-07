@@ -5,8 +5,8 @@ import { DataProvider, Repeater } from '@teleporthq/react-components'
 import Script from 'dangerous-html/react'
 import PropTypes from 'prop-types'
 
-import brandsPageInitialPropsTqAzResource from '../../resources/brands-page-initial-props-tq_az'
-import brandsPageInitialPathsTqI6Resource from '../../resources/brands-page-initial-paths-tq_i6'
+import brandsPageInitialPropsTqUyResource from '../../resources/brands-page-initial-props-tq_uy'
+import brandsPageInitialPathsTqOnResource from '../../resources/brands-page-initial-paths-tq_on'
 
 const Brands = (props) => {
   return (
@@ -3850,7 +3850,7 @@ export default Brands
 
 export async function getStaticProps(context) {
   try {
-    const response = await brandsPageInitialPropsTqAzResource({
+    const response = await brandsPageInitialPropsTqUyResource({
       ...context?.params,
     })
     if (!response?.data?.[0]) {
@@ -3874,7 +3874,7 @@ export async function getStaticProps(context) {
 
 export async function getStaticPaths() {
   try {
-    const response = await brandsPageInitialPathsTqI6Resource({
+    const response = await brandsPageInitialPathsTqOnResource({
       content_type: 'brands',
       select: 'sys.id',
     })

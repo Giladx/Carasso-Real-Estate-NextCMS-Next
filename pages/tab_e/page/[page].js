@@ -4,8 +4,8 @@ import Head from 'next/head'
 import { DataProvider, Repeater } from '@teleporthq/react-components'
 import PropTypes from 'prop-types'
 
-import tabEPageInitialPropsTqRcResource from '../../../resources/tab_e-page-initial-props-tq_rc'
-import tabEPageInitialPathsTqXrResource from '../../../resources/tab_e-page-initial-paths-tq_xr'
+import tabEPageInitialPropsTqI2Resource from '../../../resources/tab_e-page-initial-props-tq_i2'
+import tabEPageInitialPathsTqJzResource from '../../../resources/tab_e-page-initial-paths-tq_jz'
 
 const Tabe1 = (props) => {
   return (
@@ -79,7 +79,7 @@ export default Tabe1
 
 export async function getStaticProps(context) {
   try {
-    const response = await tabEPageInitialPropsTqRcResource({
+    const response = await tabEPageInitialPropsTqI2Resource({
       ...context?.params,
       skip: (context.params.page - 1) * 10,
     })
@@ -104,7 +104,7 @@ export async function getStaticProps(context) {
 
 export async function getStaticPaths() {
   try {
-    const response = await tabEPageInitialPathsTqXrResource({
+    const response = await tabEPageInitialPathsTqJzResource({
       content_type: 'tabE',
     })
     const totalCount = response?.meta?.pagination?.total

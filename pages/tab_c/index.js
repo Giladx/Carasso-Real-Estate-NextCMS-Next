@@ -4,7 +4,7 @@ import Head from 'next/head'
 import { DataProvider, Repeater } from '@teleporthq/react-components'
 import PropTypes from 'prop-types'
 
-import tabCPageInitialPropsTqL1Resource from '../../resources/tab_c-page-initial-props-tq_l1'
+import tabCPageInitialPropsTqOhResource from '../../resources/tab_c-page-initial-props-tq_oh'
 
 const Tabc = (props) => {
   return (
@@ -78,7 +78,7 @@ export default Tabc
 
 export async function getStaticProps(context) {
   try {
-    const response = await tabCPageInitialPropsTqL1Resource({
+    const response = await tabCPageInitialPropsTqOhResource({
       ...context?.params,
     })
     if (!response) {

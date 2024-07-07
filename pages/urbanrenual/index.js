@@ -4,7 +4,7 @@ import Head from 'next/head'
 import { DataProvider, Repeater } from '@teleporthq/react-components'
 import PropTypes from 'prop-types'
 
-import urbanrenualPageInitialPropsTqUtResource from '../../resources/urbanrenual-page-initial-props-tq_ut'
+import urbanrenualPageInitialPropsTqVxResource from '../../resources/urbanrenual-page-initial-props-tq_vx'
 
 const Urbanrenual = (props) => {
   return (
@@ -79,7 +79,7 @@ export default Urbanrenual
 
 export async function getStaticProps(context) {
   try {
-    const response = await urbanrenualPageInitialPropsTqUtResource({
+    const response = await urbanrenualPageInitialPropsTqVxResource({
       ...context?.params,
     })
     if (!response) {

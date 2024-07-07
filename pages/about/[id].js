@@ -4,8 +4,8 @@ import Head from 'next/head'
 import { DataProvider, Repeater } from '@teleporthq/react-components'
 import PropTypes from 'prop-types'
 
-import aboutPageInitialPropsTqT8Resource from '../../resources/about-page-initial-props-tq_t8'
-import aboutPageInitialPathsTqYgResource from '../../resources/about-page-initial-paths-tq_yg'
+import aboutPageInitialPropsTqBwResource from '../../resources/about-page-initial-props-tq_bw'
+import aboutPageInitialPathsTqFrResource from '../../resources/about-page-initial-paths-tq_fr'
 
 const About1 = (props) => {
   return (
@@ -63,7 +63,7 @@ export default About1
 
 export async function getStaticProps(context) {
   try {
-    const response = await aboutPageInitialPropsTqT8Resource({
+    const response = await aboutPageInitialPropsTqBwResource({
       ...context?.params,
     })
     if (!response?.data?.[0]) {
@@ -87,7 +87,7 @@ export async function getStaticProps(context) {
 
 export async function getStaticPaths() {
   try {
-    const response = await aboutPageInitialPathsTqYgResource({
+    const response = await aboutPageInitialPathsTqFrResource({
       content_type: 'about',
       select: 'sys.id',
     })

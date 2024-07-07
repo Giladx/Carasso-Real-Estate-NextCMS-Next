@@ -599,16 +599,8 @@
   white-space: no-wrap;
 }
 
-.tab-contents {
-  gap: 16px;
-  border: solid 0px #ccc;
-  display: flex;
-  min-height: 300px;
-}
-.tab-content {
-  display: flex;
-  padding: 16px;
-}
+
+
 .accordion {
   gap: 8px;
   display: flex;

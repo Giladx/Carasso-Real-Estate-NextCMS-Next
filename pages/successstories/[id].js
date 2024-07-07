@@ -4,8 +4,8 @@ import Head from 'next/head'
 import { DataProvider, Repeater } from '@teleporthq/react-components'
 import PropTypes from 'prop-types'
 
-import successstoriesPageInitialPropsTqNhResource from '../../resources/successstories-page-initial-props-tq_nh'
-import successstoriesPageInitialPathsTqXResource from '../../resources/successstories-page-initial-paths-tq_-x'
+import successstoriesPageInitialPropsTqWmResource from '../../resources/successstories-page-initial-props-tq_wm'
+import successstoriesPageInitialPathsTq1rResource from '../../resources/successstories-page-initial-paths-tq_1r'
 
 const Successstories = (props) => {
   return (
@@ -68,7 +68,7 @@ export default Successstories
 
 export async function getStaticProps(context) {
   try {
-    const response = await successstoriesPageInitialPropsTqNhResource({
+    const response = await successstoriesPageInitialPropsTqWmResource({
       ...context?.params,
     })
     if (!response?.data?.[0]) {
@@ -92,7 +92,7 @@ export async function getStaticProps(context) {
 
 export async function getStaticPaths() {
   try {
-    const response = await successstoriesPageInitialPathsTqXResource({
+    const response = await successstoriesPageInitialPathsTq1rResource({
       content_type: 'successStories',
       select: 'sys.id',
     })
